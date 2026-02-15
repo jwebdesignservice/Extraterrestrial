@@ -95,7 +95,7 @@ export default function Navbar() {
                 href="/token"
                 className="px-4 py-2 bg-[var(--matrix-green)] text-[var(--alien-black)] font-mono font-bold text-sm uppercase tracking-wider rounded hover:shadow-[0_0_20px_var(--matrix-green-glow)] transition-all duration-300"
               >
-                Buy $ET
+                Buy $ETS
               </Link>
             </div>
 
@@ -200,7 +200,7 @@ export default function Navbar() {
                   onClick={() => setIsOpen(false)}
                   className="block w-full px-4 py-3 mt-4 bg-[var(--matrix-green)] text-[var(--alien-black)] font-mono font-bold text-sm uppercase tracking-wider rounded text-center"
                 >
-                  Buy $ET Token
+                  Buy $ETS Token
                 </Link>
               </motion.div>
             </div>
