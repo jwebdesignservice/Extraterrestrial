@@ -402,6 +402,12 @@ export default function WorldMap({ sightings, onMarkerClick }: WorldMapProps) {
     }
   };
 
+  // Define world bounds to prevent dragging beyond the map
+  const worldBounds = L.latLngBounds(
+    L.latLng(-85, -180), // Southwest corner
+    L.latLng(85, 180)    // Northeast corner
+  );
+
   return (
     <MapContainer
       center={[20, 0]}
@@ -418,6 +424,8 @@ export default function WorldMap({ sightings, onMarkerClick }: WorldMapProps) {
       minZoom={2}
       maxZoom={isMobile ? 5 : 2}
       worldCopyJump={false}
+      maxBounds={worldBounds}
+      maxBoundsViscosity={1.0}
     >
       <TileLayer
         url="https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png"
