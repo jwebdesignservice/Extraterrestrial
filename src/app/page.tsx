@@ -1,5 +1,6 @@
 'use client';
 
+// ET Scan - Global Sighting Tracker
 import { useState, useMemo } from 'react';
 import dynamic from 'next/dynamic';
 import { motion } from 'framer-motion';
