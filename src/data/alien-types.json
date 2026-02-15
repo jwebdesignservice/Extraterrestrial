@@ -1,0 +1,93 @@
+[
+  {
+    "id": "grey",
+    "name": "Grey",
+    "description": "Small humanoid beings with grey skin, large heads, and enormous black almond-shaped eyes. Most commonly reported alien type.",
+    "intelligence": 9,
+    "technologicalCapability": 9,
+    "hostility": 3,
+    "originSystem": "Zeta Reticuli",
+    "characteristics": ["Grey skin", "Large head", "Black almond eyes", "3-4 feet tall", "Telepathic"],
+    "knownAbilities": ["Telepathy", "Memory manipulation", "Advanced medicine", "Dimensional travel"],
+    "firstContact": "1947",
+    "sightingsCount": 847
+  },
+  {
+    "id": "reptilian",
+    "name": "Reptilian",
+    "description": "Tall, humanoid reptilian beings with scaled skin, vertical pupils, and powerful builds. Often associated with infiltration theories.",
+    "intelligence": 8,
+    "technologicalCapability": 8,
+    "hostility": 7,
+    "originSystem": "Alpha Draconis",
+    "characteristics": ["Scaled skin", "Vertical pupils", "6-8 feet tall", "Muscular build", "Clawed hands"],
+    "knownAbilities": ["Shapeshifting", "Mind control", "Longevity", "Underground habitation"],
+    "firstContact": "Ancient",
+    "sightingsCount": 234
+  },
+  {
+    "id": "nordic",
+    "name": "Nordic",
+    "description": "Tall, human-like beings with blonde hair, blue eyes, and Scandinavian features. Generally considered benevolent.",
+    "intelligence": 10,
+    "technologicalCapability": 10,
+    "hostility": 1,
+    "originSystem": "Pleiades",
+    "characteristics": ["Human appearance", "Blonde hair", "Blue eyes", "6-7 feet tall", "Athletic build"],
+    "knownAbilities": ["Telepathy", "Healing", "Space travel", "Spiritual guidance"],
+    "firstContact": "1952",
+    "sightingsCount": 156
+  },
+  {
+    "id": "mantis",
+    "name": "Mantis",
+    "description": "Insectoid beings resembling praying mantises. Often reported alongside Greys, appearing to hold supervisory roles.",
+    "intelligence": 10,
+    "technologicalCapability": 9,
+    "hostility": 2,
+    "originSystem": "Unknown",
+    "characteristics": ["Insectoid body", "Triangular head", "Large compound eyes", "7-8 feet tall", "Thin limbs"],
+    "knownAbilities": ["Telepathy", "Genetic manipulation", "Hive consciousness", "Time perception"],
+    "firstContact": "1960s",
+    "sightingsCount": 89
+  },
+  {
+    "id": "interdimensional",
+    "name": "Interdimensional",
+    "description": "Beings that exist outside our physical dimension. May manifest in various forms, often luminous or shifting.",
+    "intelligence": 10,
+    "technologicalCapability": 10,
+    "hostility": 2,
+    "originSystem": "Other Dimension",
+    "characteristics": ["Non-physical", "Shifting form", "Luminous", "Variable size", "Ethereal"],
+    "knownAbilities": ["Dimensional travel", "Reality manipulation", "Consciousness projection", "Time travel"],
+    "firstContact": "Unknown",
+    "sightingsCount": 167
+  },
+  {
+    "id": "hybrid",
+    "name": "Hybrid",
+    "description": "Beings that appear to be genetic mixtures of human and alien DNA. Often reported in abduction scenarios.",
+    "intelligence": 7,
+    "technologicalCapability": 6,
+    "hostility": 2,
+    "originSystem": "Earth/Unknown",
+    "characteristics": ["Mixed features", "Pale skin", "Large eyes", "Human-like but off", "Various heights"],
+    "knownAbilities": ["Telepathy", "Enhanced senses", "Adaptability"],
+    "firstContact": "1980s",
+    "sightingsCount": 98
+  },
+  {
+    "id": "unknown",
+    "name": "Unknown",
+    "description": "Unidentified or unclassified entities. May represent new species or craft without visible occupants.",
+    "intelligence": 0,
+    "technologicalCapability": 0,
+    "hostility": 0,
+    "originSystem": "Unknown",
+    "characteristics": ["Varies", "Unclassified"],
+    "knownAbilities": ["Unknown"],
+    "firstContact": "Ongoing",
+    "sightingsCount": 1256
+  }
+]

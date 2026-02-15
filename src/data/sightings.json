@@ -1,0 +1,655 @@
+[
+  {
+    "id": "1",
+    "slug": "phoenix-lights-1997",
+    "title": "Phoenix Lights",
+    "subtitle": "Mass Sighting Event",
+    "location": {
+      "country": "United States",
+      "countryCode": "🇺🇸",
+      "city": "Phoenix",
+      "region": "Arizona",
+      "coords": [33.4484, -112.0740]
+    },
+    "date": "1997-03-13",
+    "year": 1997,
+    "credibilityScore": 92,
+    "threatLevel": 3,
+    "alienType": "Unknown",
+    "overview": "One of the most witnessed UFO sightings in history. Thousands of people across Arizona witnessed a massive V-shaped craft with lights spanning nearly a mile, silently gliding over Phoenix. The event was witnessed by the Governor, police officers, pilots, and thousands of civilians.",
+    "timeline": [
+      {"time": "19:30", "title": "First Reports", "description": "Initial sightings reported in Henderson, Nevada"},
+      {"time": "20:15", "title": "Phoenix Approach", "description": "Craft observed approaching Phoenix metropolitan area"},
+      {"time": "20:30", "title": "Mass Sighting", "description": "Thousands witness craft passing directly over Phoenix"},
+      {"time": "22:00", "title": "Second Wave", "description": "Additional lights observed, later claimed as flares by military"}
+    ],
+    "witnesses": [
+      {"id": "w1", "name": "Fife Symington", "occupation": "Governor of Arizona", "testimony": "I witnessed a massive delta-shaped craft silently navigate over Squaw Peak. It was truly breathtaking.", "credibility": "high", "verified": true},
+      {"id": "w2", "name": "Dr. Lynne Kitei", "occupation": "Physician", "testimony": "I observed amber orbs that moved with intelligent purpose. This was not flares or conventional aircraft.", "credibility": "high", "verified": true}
+    ],
+    "probabilities": {"hoax": 5, "extraterrestrial": 72, "coverUp": 85},
+    "relatedTopics": ["Military Flares Cover Story", "Governor Symington Press Conference", "Project Snowbird"],
+    "sources": ["USA Today", "Arizona Republic", "CNN"],
+    "featured": true,
+    "tags": ["mass-sighting", "triangle", "military-response"]
+  },
+  {
+    "id": "2",
+    "slug": "roswell-incident-1947",
+    "title": "Roswell Incident",
+    "subtitle": "The Original Cover-Up",
+    "location": {
+      "country": "United States",
+      "countryCode": "🇺🇸",
+      "city": "Roswell",
+      "region": "New Mexico",
+      "coords": [33.3943, -104.5230]
+    },
+    "date": "1947-07-08",
+    "year": 1947,
+    "credibilityScore": 88,
+    "threatLevel": 5,
+    "alienType": "Grey",
+    "overview": "A rancher discovered mysterious debris scattered across his property. The military initially announced recovery of a 'flying disc' before quickly changing the story to a weather balloon. Witnesses reported seeing alien bodies. This incident sparked decades of conspiracy theories.",
+    "timeline": [
+      {"time": "Unknown", "title": "Crash Discovery", "description": "Rancher Mac Brazel discovers debris field"},
+      {"time": "July 7", "title": "Military Notified", "description": "Brazel reports findings to Sheriff Wilcox"},
+      {"time": "July 8 AM", "title": "Press Release", "description": "Army announces recovery of flying disc"},
+      {"time": "July 8 PM", "title": "Retraction", "description": "Story changed to weather balloon"}
+    ],
+    "witnesses": [
+      {"id": "w3", "name": "Jesse Marcel", "occupation": "Major, USAF", "testimony": "The material was nothing from this Earth. It had properties unlike anything I had ever seen.", "credibility": "high", "verified": true}
+    ],
+    "probabilities": {"hoax": 8, "extraterrestrial": 78, "coverUp": 95},
+    "relatedTopics": ["Area 51", "Project Mogul", "Alien Autopsy Film"],
+    "sources": ["Roswell Daily Record", "USAF Reports"],
+    "featured": true,
+    "tags": ["crash", "recovery", "government-coverup", "bodies"]
+  },
+  {
+    "id": "3",
+    "slug": "rendlesham-forest-1980",
+    "title": "Rendlesham Forest",
+    "subtitle": "Britain's Roswell",
+    "location": {
+      "country": "United Kingdom",
+      "countryCode": "🇬🇧",
+      "city": "Woodbridge",
+      "region": "Suffolk",
+      "coords": [52.0833, 1.4333]
+    },
+    "date": "1980-12-26",
+    "year": 1980,
+    "credibilityScore": 85,
+    "threatLevel": 4,
+    "alienType": "Unknown",
+    "overview": "US Air Force personnel stationed at RAF Woodbridge witnessed unexplained lights descending into nearby Rendlesham Forest. Deputy Base Commander Lt. Col. Charles Halt led an investigation and recorded observations on audio tape. Physical evidence included radiation readings and landing marks.",
+    "timeline": [
+      {"time": "03:00", "title": "Initial Contact", "description": "Security patrol observes lights descending into forest"},
+      {"time": "03:30", "title": "Ground Investigation", "description": "Team enters forest, encounters triangular craft"},
+      {"time": "Dec 28", "title": "Return Visit", "description": "Lt. Col. Halt leads second investigation, records observations"}
+    ],
+    "witnesses": [
+      {"id": "w4", "name": "Charles Halt", "occupation": "Lt. Colonel, USAF", "testimony": "I saw a red sun-like light moving through the trees. It appeared to drip molten metal.", "credibility": "high", "verified": true}
+    ],
+    "probabilities": {"hoax": 10, "extraterrestrial": 68, "coverUp": 75},
+    "relatedTopics": ["Halt Memo", "Binary Code Message", "NATO Base Security"],
+    "sources": ["Ministry of Defence Files", "BBC Documentary"],
+    "featured": true,
+    "tags": ["military-witnesses", "physical-evidence", "radiation"]
+  },
+  {
+    "id": "4",
+    "slug": "tic-tac-ufo-2004",
+    "title": "USS Nimitz Tic Tac",
+    "subtitle": "Pentagon Confirmed UAP",
+    "location": {
+      "country": "United States",
+      "countryCode": "🇺🇸",
+      "city": "Pacific Ocean",
+      "region": "Off San Diego",
+      "coords": [31.0000, -118.0000]
+    },
+    "date": "2004-11-14",
+    "year": 2004,
+    "credibilityScore": 95,
+    "threatLevel": 4,
+    "alienType": "Unknown",
+    "overview": "Navy pilots from USS Nimitz encountered a white, tic-tac shaped object exhibiting capabilities far beyond known technology. The object demonstrated instantaneous acceleration, hypersonic speeds without visible propulsion, and the ability to descend from 80,000 feet to sea level in seconds.",
+    "timeline": [
+      {"time": "14:00", "title": "Radar Contact", "description": "USS Princeton tracks multiple anomalous objects"},
+      {"time": "14:30", "title": "Visual Contact", "description": "F/A-18 pilots intercept and observe Tic Tac object"},
+      {"time": "14:35", "title": "Pursuit", "description": "Object accelerates beyond aircraft capability"},
+      {"time": "14:40", "title": "Reappearance", "description": "Object appears at CAP point 60 miles away"}
+    ],
+    "witnesses": [
+      {"id": "w5", "name": "David Fravor", "occupation": "Commander, US Navy", "testimony": "It accelerated like nothing I've ever seen. This was beyond any technology we possess.", "credibility": "high", "verified": true}
+    ],
+    "probabilities": {"hoax": 2, "extraterrestrial": 82, "coverUp": 70},
+    "relatedTopics": ["AATIP Program", "Pentagon UFO Videos", "Go Fast Video"],
+    "sources": ["New York Times", "Pentagon Release", "60 Minutes"],
+    "featured": true,
+    "tags": ["military-footage", "pentagon-confirmed", "advanced-tech"]
+  },
+  {
+    "id": "5",
+    "slug": "belgium-wave-1989",
+    "title": "Belgian UFO Wave",
+    "subtitle": "Triangular Craft Over Europe",
+    "location": {
+      "country": "Belgium",
+      "countryCode": "🇧🇪",
+      "city": "Brussels",
+      "region": "National",
+      "coords": [50.8503, 4.3517]
+    },
+    "date": "1989-11-29",
+    "year": 1989,
+    "credibilityScore": 87,
+    "threatLevel": 3,
+    "alienType": "Unknown",
+    "overview": "Over 13,500 people reported sightings of large, silent, triangular craft over Belgium. F-16 fighters were scrambled and tracked the objects on radar. The Belgian Air Force officially acknowledged the sightings and released their findings.",
+    "timeline": [
+      {"time": "17:30", "title": "First Reports", "description": "Police officers observe triangular craft with lights"},
+      {"time": "18:00", "title": "Mass Sightings", "description": "Hundreds of calls flood emergency services"},
+      {"time": "March 1990", "title": "F-16 Scramble", "description": "Belgian Air Force intercepts radar contacts"}
+    ],
+    "witnesses": [
+      {"id": "w6", "name": "Wilfried De Brouwer", "occupation": "Major General, Belgian Air Force", "testimony": "We have no explanation for what our pilots and radar systems detected.", "credibility": "high", "verified": true}
+    ],
+    "probabilities": {"hoax": 8, "extraterrestrial": 65, "coverUp": 40},
+    "relatedTopics": ["SOBEPS Investigation", "F-16 Radar Locks", "Triangle UFOs"],
+    "sources": ["Belgian Air Force Report", "SOBEPS"],
+    "featured": false,
+    "tags": ["mass-sighting", "triangle", "air-force", "radar"]
+  },
+  {
+    "id": "6",
+    "slug": "zimbabwe-school-1994",
+    "title": "Ariel School Encounter",
+    "subtitle": "62 Children Witness Landing",
+    "location": {
+      "country": "Zimbabwe",
+      "countryCode": "🇿🇼",
+      "city": "Ruwa",
+      "region": "Mashonaland East",
+      "coords": [-17.8900, 31.2500]
+    },
+    "date": "1994-09-16",
+    "year": 1994,
+    "credibilityScore": 90,
+    "threatLevel": 2,
+    "alienType": "Grey",
+    "overview": "62 schoolchildren at Ariel School witnessed a silver craft land near their playground. Small beings with large eyes emerged and communicated telepathically, warning about environmental destruction. The children's accounts remained consistent over decades.",
+    "timeline": [
+      {"time": "10:15", "title": "Craft Appears", "description": "Children observe silvery object descending"},
+      {"time": "10:20", "title": "Landing", "description": "Craft lands approximately 100 meters from school"},
+      {"time": "10:25", "title": "Contact", "description": "Beings emerge and approach children"},
+      {"time": "10:30", "title": "Departure", "description": "Craft ascends rapidly and disappears"}
+    ],
+    "witnesses": [
+      {"id": "w7", "name": "Emily Trim", "occupation": "Student (Age 11)", "testimony": "They had huge eyes. They told me the world is going to end if we don't take care of it.", "credibility": "high", "verified": true}
+    ],
+    "probabilities": {"hoax": 5, "extraterrestrial": 80, "coverUp": 25},
+    "relatedTopics": ["Dr. John Mack Investigation", "Telepathic Communication", "Environmental Message"],
+    "sources": ["Harvard Study", "BBC Africa"],
+    "featured": true,
+    "tags": ["landing", "contact", "children-witnesses", "telepathy"]
+  },
+  {
+    "id": "7",
+    "slug": "mexico-city-eclipse-1991",
+    "title": "Mexico City Eclipse UFOs",
+    "subtitle": "Mass Sighting During Solar Event",
+    "location": {
+      "country": "Mexico",
+      "countryCode": "🇲🇽",
+      "city": "Mexico City",
+      "region": "Federal District",
+      "coords": [19.4326, -99.1332]
+    },
+    "date": "1991-07-11",
+    "year": 1991,
+    "credibilityScore": 75,
+    "threatLevel": 2,
+    "alienType": "Unknown",
+    "overview": "During a total solar eclipse, thousands of people across Mexico videotaped metallic objects hovering in the sky. Multiple independent videos from different locations showed similar craft, sparking a wave of UFO interest across Latin America.",
+    "timeline": [
+      {"time": "13:24", "title": "Eclipse Begins", "description": "Total solar eclipse visible across Mexico"},
+      {"time": "13:25", "title": "Objects Appear", "description": "Metallic objects spotted near obscured sun"},
+      {"time": "13:30", "title": "Mass Recording", "description": "Thousands capture footage on video cameras"}
+    ],
+    "witnesses": [
+      {"id": "w8", "name": "Jaime Maussan", "occupation": "Journalist", "testimony": "We collected over 15 independent videos showing the same objects from different angles.", "credibility": "medium", "verified": true}
+    ],
+    "probabilities": {"hoax": 25, "extraterrestrial": 45, "coverUp": 30},
+    "relatedTopics": ["Solar Eclipse Correlation", "Mexican UFO Wave", "Video Analysis"],
+    "sources": ["Televisa", "Mexican Media"],
+    "featured": false,
+    "tags": ["mass-sighting", "video-evidence", "eclipse"]
+  },
+  {
+    "id": "8",
+    "slug": "japan-airlines-1986",
+    "title": "Japan Airlines Flight 1628",
+    "subtitle": "Giant Mothership Encounter",
+    "location": {
+      "country": "United States",
+      "countryCode": "🇺🇸",
+      "city": "Fairbanks",
+      "region": "Alaska",
+      "coords": [64.8378, -147.7164]
+    },
+    "date": "1986-11-17",
+    "year": 1986,
+    "credibilityScore": 82,
+    "threatLevel": 3,
+    "alienType": "Unknown",
+    "overview": "A Japan Airlines cargo flight was followed by unidentified objects for 50 minutes over Alaska. Captain Kenju Terauchi reported seeing a massive mothership, estimated to be the size of two aircraft carriers. FAA radar confirmed unidentified targets.",
+    "timeline": [
+      {"time": "17:11", "title": "First Contact", "description": "Crew observes two small craft with glowing lights"},
+      {"time": "17:23", "title": "Mothership Appears", "description": "Massive object detected, dwarfing the 747"},
+      {"time": "17:30", "title": "FAA Radar", "description": "Anchorage control confirms radar contact"},
+      {"time": "18:00", "title": "Objects Depart", "description": "Craft disappear as flight approaches Fairbanks"}
+    ],
+    "witnesses": [
+      {"id": "w9", "name": "Kenju Terauchi", "occupation": "JAL Captain", "testimony": "It was a spaceship, at least twice the size of an aircraft carrier. It followed us for 50 minutes.", "credibility": "high", "verified": true}
+    ],
+    "probabilities": {"hoax": 10, "extraterrestrial": 70, "coverUp": 60},
+    "relatedTopics": ["FAA Investigation", "Radar Evidence", "Pilot Testimony"],
+    "sources": ["FAA Report", "Aviation Week"],
+    "featured": false,
+    "tags": ["pilot-sighting", "radar", "mothership"]
+  },
+  {
+    "id": "9",
+    "slug": "stephenville-texas-2008",
+    "title": "Stephenville Lights",
+    "subtitle": "Texas Mass Sighting",
+    "location": {
+      "country": "United States",
+      "countryCode": "🇺🇸",
+      "city": "Stephenville",
+      "region": "Texas",
+      "coords": [32.2207, -98.2022]
+    },
+    "date": "2008-01-08",
+    "year": 2008,
+    "credibilityScore": 78,
+    "threatLevel": 3,
+    "alienType": "Unknown",
+    "overview": "Dozens of residents in Stephenville witnessed a large, silent object with bright lights moving at high speed. Some described it as a mile wide. Military jets were seen pursuing the object. The Air Force initially denied activity, then admitted F-16s were in the area.",
+    "timeline": [
+      {"time": "18:15", "title": "Object Appears", "description": "Multiple witnesses observe large craft with lights"},
+      {"time": "18:20", "title": "Military Pursuit", "description": "F-16 jets observed following the object"},
+      {"time": "18:30", "title": "Rapid Departure", "description": "Object accelerates to extreme speed and vanishes"}
+    ],
+    "witnesses": [
+      {"id": "w10", "name": "Steve Allen", "occupation": "Pilot/Business Owner", "testimony": "It was about a mile wide and half a mile tall. Totally silent, with incredibly bright lights.", "credibility": "high", "verified": true}
+    ],
+    "probabilities": {"hoax": 12, "extraterrestrial": 58, "coverUp": 70},
+    "relatedTopics": ["MUFON Investigation", "Radar Data Analysis", "Military Denial"],
+    "sources": ["Stephenville Empire-Tribune", "MUFON"],
+    "featured": false,
+    "tags": ["mass-sighting", "military-pursuit", "large-craft"]
+  },
+  {
+    "id": "10",
+    "slug": "colares-brazil-1977",
+    "title": "Operation Saucer",
+    "subtitle": "Brazilian Military Investigation",
+    "location": {
+      "country": "Brazil",
+      "countryCode": "🇧🇷",
+      "city": "Colares",
+      "region": "Pará",
+      "coords": [-0.9333, -48.2833]
+    },
+    "date": "1977-10-01",
+    "year": 1977,
+    "credibilityScore": 80,
+    "threatLevel": 5,
+    "alienType": "Unknown",
+    "overview": "Residents of Colares Island reported being attacked by bright lights that left burn marks and drew blood. The Brazilian Air Force launched Operation Saucer to investigate. Over 400 photographs and hours of footage were collected. Dozens of people showed physical injuries.",
+    "timeline": [
+      {"time": "August", "title": "Attacks Begin", "description": "Residents report being struck by beams of light"},
+      {"time": "September", "title": "Panic Spreads", "description": "Villagers flee, organize night watches"},
+      {"time": "October", "title": "Military Arrives", "description": "Brazilian Air Force begins Operation Saucer"},
+      {"time": "December", "title": "Operation Ends", "description": "Investigation concluded, files classified"}
+    ],
+    "witnesses": [
+      {"id": "w11", "name": "Captain Uyrangê Hollanda", "occupation": "Brazilian Air Force", "testimony": "We photographed the objects. They were real. People were genuinely injured.", "credibility": "high", "verified": true}
+    ],
+    "probabilities": {"hoax": 5, "extraterrestrial": 75, "coverUp": 85},
+    "relatedTopics": ["Chupa-Chupa", "Physical Evidence", "Military Documentation"],
+    "sources": ["Brazilian Air Force Files", "A.J. Gevaerd Research"],
+    "featured": true,
+    "tags": ["physical-harm", "military-investigation", "documented"]
+  },
+  {
+    "id": "11",
+    "slug": "tehran-ufo-1976",
+    "title": "Tehran UFO Incident",
+    "subtitle": "Jet Interceptors Disabled",
+    "location": {
+      "country": "Iran",
+      "countryCode": "🇮🇷",
+      "city": "Tehran",
+      "region": "Tehran Province",
+      "coords": [35.6892, 51.3890]
+    },
+    "date": "1976-09-19",
+    "year": 1976,
+    "credibilityScore": 88,
+    "threatLevel": 5,
+    "alienType": "Unknown",
+    "overview": "Iranian Air Force F-4 Phantoms were scrambled to intercept a brilliant UFO over Tehran. When pilots attempted to fire on the object, their weapons systems jammed. A smaller object detached and pursued one jet. The incident was documented in a US Defense Intelligence Agency report.",
+    "timeline": [
+      {"time": "00:30", "title": "Civilian Reports", "description": "Residents report bright object in sky"},
+      {"time": "01:30", "title": "First Intercept", "description": "F-4 Phantom scrambled, instruments fail"},
+      {"time": "01:40", "title": "Second Intercept", "description": "Second F-4 attempts weapons lock, systems jam"},
+      {"time": "02:00", "title": "Object Departs", "description": "UFO accelerates and disappears"}
+    ],
+    "witnesses": [
+      {"id": "w12", "name": "General Parviz Jafari", "occupation": "Iranian Air Force", "testimony": "When I tried to launch a missile, my weapons panel went completely dead.", "credibility": "high", "verified": true}
+    ],
+    "probabilities": {"hoax": 5, "extraterrestrial": 80, "coverUp": 65},
+    "relatedTopics": ["DIA Report", "Electromagnetic Interference", "Weapons Jamming"],
+    "sources": ["DIA Documents", "Iranian Air Force"],
+    "featured": true,
+    "tags": ["military-encounter", "weapons-disabled", "electromagnetic"]
+  },
+  {
+    "id": "12",
+    "slug": "hudson-valley-1982",
+    "title": "Hudson Valley Wave",
+    "subtitle": "Boomerang Over New York",
+    "location": {
+      "country": "United States",
+      "countryCode": "🇺🇸",
+      "city": "Yorktown",
+      "region": "New York",
+      "coords": [41.2706, -73.7773]
+    },
+    "date": "1982-12-31",
+    "year": 1982,
+    "credibilityScore": 76,
+    "threatLevel": 2,
+    "alienType": "Unknown",
+    "overview": "Over several years, thousands of residents in New York's Hudson Valley reported seeing a massive boomerang-shaped craft with colored lights. The craft was often described as silent or emitting a low hum. Police switchboards were overwhelmed with calls.",
+    "timeline": [
+      {"time": "1982", "title": "Wave Begins", "description": "Initial sightings reported in Westchester County"},
+      {"time": "1983-84", "title": "Peak Activity", "description": "Thousands of sightings across the region"},
+      {"time": "1986", "title": "Wave Subsides", "description": "Sighting frequency decreases"}
+    ],
+    "witnesses": [
+      {"id": "w13", "name": "Dennis Sant", "occupation": "Security Guard", "testimony": "It was as big as a football field. The lights were arranged in a V-shape.", "credibility": "medium", "verified": true}
+    ],
+    "probabilities": {"hoax": 20, "extraterrestrial": 55, "coverUp": 40},
+    "relatedTopics": ["Night Siege", "Taconic Parkway Sightings", "Dr. J. Allen Hynek"],
+    "sources": ["Night Siege Book", "Local News"],
+    "featured": false,
+    "tags": ["mass-sighting", "boomerang", "long-duration"]
+  },
+  {
+    "id": "13",
+    "slug": "westall-australia-1966",
+    "title": "Westall UFO Encounter",
+    "subtitle": "200 Witness School Landing",
+    "location": {
+      "country": "Australia",
+      "countryCode": "🇦🇺",
+      "city": "Melbourne",
+      "region": "Victoria",
+      "coords": [-37.9300, 145.0500]
+    },
+    "date": "1966-04-06",
+    "year": 1966,
+    "credibilityScore": 84,
+    "threatLevel": 2,
+    "alienType": "Unknown",
+    "overview": "Over 200 students and teachers at Westall High School witnessed a grey saucer-shaped craft descend into a nearby field, then ascend and fly away. Military personnel arrived quickly and warned witnesses not to discuss what they saw. Physical traces were found in the grass.",
+    "timeline": [
+      {"time": "11:00", "title": "Object Appears", "description": "Students observe disc descending toward field"},
+      {"time": "11:05", "title": "Landing", "description": "Craft lands in paddock, observed by crowd"},
+      {"time": "11:20", "title": "Departure", "description": "Object ascends at high speed"},
+      {"time": "12:00", "title": "Military Arrives", "description": "Officials cordon area, question witnesses"}
+    ],
+    "witnesses": [
+      {"id": "w14", "name": "Terry Peck", "occupation": "Student", "testimony": "We all saw it. It was real. Then they came and told us never to talk about it.", "credibility": "high", "verified": true}
+    ],
+    "probabilities": {"hoax": 8, "extraterrestrial": 70, "coverUp": 80},
+    "relatedTopics": ["Ground Traces", "Witness Intimidation", "The Grange"],
+    "sources": ["Westall Documentary", "The Age"],
+    "featured": false,
+    "tags": ["school-sighting", "landing", "coverup"]
+  },
+  {
+    "id": "14",
+    "slug": "shag-harbour-1967",
+    "title": "Shag Harbour Incident",
+    "subtitle": "Canada's Roswell",
+    "location": {
+      "country": "Canada",
+      "countryCode": "🇨🇦",
+      "city": "Shag Harbour",
+      "region": "Nova Scotia",
+      "coords": [43.4600, -65.7200]
+    },
+    "date": "1967-10-04",
+    "year": 1967,
+    "credibilityScore": 83,
+    "threatLevel": 3,
+    "alienType": "Unknown",
+    "overview": "Multiple witnesses observed a large object with flashing lights crash into the waters of Shag Harbour. Rescue operations were launched, but only yellow foam was recovered. Declassified documents reveal military divers were deployed and detected an object underwater.",
+    "timeline": [
+      {"time": "23:20", "title": "Object Observed", "description": "Residents see object with lights descending"},
+      {"time": "23:25", "title": "Impact", "description": "Object crashes into harbor waters"},
+      {"time": "23:30", "title": "Rescue Launched", "description": "Coast Guard and RCMP respond"},
+      {"time": "Next Day", "title": "Dive Operations", "description": "Military divers conduct underwater search"}
+    ],
+    "witnesses": [
+      {"id": "w15", "name": "Laurie Chicken", "occupation": "Fisherman", "testimony": "We saw four lights about 60 feet long hit the water. There was a light on the water for a while after.", "credibility": "high", "verified": true}
+    ],
+    "probabilities": {"hoax": 10, "extraterrestrial": 65, "coverUp": 75},
+    "relatedTopics": ["Underwater UFO", "Military Dive Operations", "Yellow Foam"],
+    "sources": ["Canadian Forces Records", "CBC"],
+    "featured": false,
+    "tags": ["crash", "underwater", "military-recovery"]
+  },
+  {
+    "id": "15",
+    "slug": "washington-dc-1952",
+    "title": "Washington D.C. UFO Flap",
+    "subtitle": "UFOs Over the Capital",
+    "location": {
+      "country": "United States",
+      "countryCode": "🇺🇸",
+      "city": "Washington D.C.",
+      "region": "District of Columbia",
+      "coords": [38.9072, -77.0369]
+    },
+    "date": "1952-07-19",
+    "year": 1952,
+    "credibilityScore": 86,
+    "threatLevel": 4,
+    "alienType": "Unknown",
+    "overview": "Over two consecutive weekends, UFOs were detected on radar and visually observed over Washington D.C., including restricted airspace over the White House and Capitol. F-94 jets were scrambled. The incident sparked the largest Pentagon press conference since WWII.",
+    "timeline": [
+      {"time": "23:40", "title": "Radar Contact", "description": "Washington National Airport detects unknown targets"},
+      {"time": "00:30", "title": "Visual Confirmation", "description": "Pilots observe bright lights"},
+      {"time": "July 26", "title": "Second Wave", "description": "Objects return, jets scrambled again"}
+    ],
+    "witnesses": [
+      {"id": "w16", "name": "Edward Nugent", "occupation": "Air Traffic Controller", "testimony": "I saw seven objects on radar. They were doing speeds of up to 7,200 mph.", "credibility": "high", "verified": true}
+    ],
+    "probabilities": {"hoax": 5, "extraterrestrial": 72, "coverUp": 80},
+    "relatedTopics": ["Project Blue Book", "Temperature Inversion Theory", "Pentagon Press Conference"],
+    "sources": ["Washington Post", "USAF Records"],
+    "featured": true,
+    "tags": ["radar", "capital", "jets-scrambled"]
+  },
+  {
+    "id": "16",
+    "slug": "height-423-1989",
+    "title": "Height 423 Encounter",
+    "subtitle": "Soviet Military Encounter",
+    "location": {
+      "country": "Russia",
+      "countryCode": "🇷🇺",
+      "city": "Kapustin Yar",
+      "region": "Astrakhan Oblast",
+      "coords": [48.5700, 46.2500]
+    },
+    "date": "1989-06-06",
+    "year": 1989,
+    "credibilityScore": 75,
+    "threatLevel": 4,
+    "alienType": "Unknown",
+    "overview": "Soviet military personnel at a missile test range observed a disc-shaped object hovering near Height 423. The object emitted beams of light that appeared to scan the ground. Multiple soldiers observed the event over several hours.",
+    "timeline": [
+      {"time": "22:30", "title": "Object Appears", "description": "Guards observe luminous disc approaching"},
+      {"time": "23:00", "title": "Scanning", "description": "Object emits beams toward ground installations"},
+      {"time": "01:00", "title": "Departure", "description": "Object ascends and disappears"}
+    ],
+    "witnesses": [
+      {"id": "w17", "name": "Military Personnel", "occupation": "Soviet Army", "testimony": "The disc hovered silently. Its lights seemed to probe our equipment.", "credibility": "medium", "verified": true}
+    ],
+    "probabilities": {"hoax": 15, "extraterrestrial": 60, "coverUp": 70},
+    "relatedTopics": ["Soviet UFO Files", "Missile Base Encounters", "KGB Investigation"],
+    "sources": ["KGB Declassified", "Russian Media"],
+    "featured": false,
+    "tags": ["military-base", "scanning", "soviet"]
+  },
+  {
+    "id": "17",
+    "slug": "varginha-brazil-1996",
+    "title": "Varginha UFO Incident",
+    "subtitle": "Brazilian Roswell",
+    "location": {
+      "country": "Brazil",
+      "countryCode": "🇧🇷",
+      "city": "Varginha",
+      "region": "Minas Gerais",
+      "coords": [-21.5514, -45.4331]
+    },
+    "date": "1996-01-20",
+    "year": 1996,
+    "credibilityScore": 72,
+    "threatLevel": 3,
+    "alienType": "Unknown",
+    "overview": "Three young women encountered a strange creature with brown skin, large red eyes, and a strong ammonia smell. Reports emerged of military capture of similar beings and a crashed craft. A soldier who allegedly handled one of the creatures died under mysterious circumstances.",
+    "timeline": [
+      {"time": "15:30", "title": "Creature Spotted", "description": "Three girls encounter being near empty lot"},
+      {"time": "Evening", "title": "Military Activity", "description": "Unusual military presence reported"},
+      {"time": "Later", "title": "Hospital Reports", "description": "Injured creature allegedly brought to hospital"}
+    ],
+    "witnesses": [
+      {"id": "w18", "name": "Liliane Fátima", "occupation": "Student", "testimony": "It was squatting against the wall. It had huge red eyes and oily brown skin.", "credibility": "medium", "verified": true}
+    ],
+    "probabilities": {"hoax": 25, "extraterrestrial": 50, "coverUp": 65},
+    "relatedTopics": ["Military Cover-Up", "Creature Description", "Soldier Death"],
+    "sources": ["Brazilian Ufology", "Varginha Documentary"],
+    "featured": false,
+    "tags": ["creature", "capture", "brazil"]
+  },
+  {
+    "id": "18",
+    "slug": "skinwalker-ranch-ongoing",
+    "title": "Skinwalker Ranch",
+    "subtitle": "Paranormal Hotspot",
+    "location": {
+      "country": "United States",
+      "countryCode": "🇺🇸",
+      "city": "Ballard",
+      "region": "Utah",
+      "coords": [40.2588, -109.8880]
+    },
+    "date": "1994-01-01",
+    "year": 1994,
+    "credibilityScore": 70,
+    "threatLevel": 4,
+    "alienType": "Interdimensional",
+    "overview": "A 512-acre property in Utah known for decades of unexplained phenomena including UFO sightings, cattle mutilations, poltergeist activity, and interdimensional portals. The ranch was purchased for scientific study by billionaire Robert Bigelow, then later acquired by Brandon Fugal.",
+    "timeline": [
+      {"time": "1994", "title": "Sherman Family", "description": "New owners experience intense phenomena"},
+      {"time": "1996", "title": "NIDS Study", "description": "Robert Bigelow purchases ranch for research"},
+      {"time": "2016", "title": "New Ownership", "description": "Brandon Fugal acquires property"},
+      {"time": "2020", "title": "TV Series", "description": "History Channel documents ongoing research"}
+    ],
+    "witnesses": [
+      {"id": "w19", "name": "Terry Sherman", "occupation": "Rancher", "testimony": "We saw portals open in the sky. Animals came through that weren't from here.", "credibility": "medium", "verified": true}
+    ],
+    "probabilities": {"hoax": 20, "extraterrestrial": 55, "coverUp": 45},
+    "relatedTopics": ["AAWSAP", "Cattle Mutilation", "Portal Phenomena"],
+    "sources": ["History Channel", "NIDS Reports"],
+    "featured": true,
+    "tags": ["ongoing", "paranormal", "portals", "research"]
+  },
+  {
+    "id": "19",
+    "slug": "kecksburg-1965",
+    "title": "Kecksburg UFO Crash",
+    "subtitle": "The Acorn Object",
+    "location": {
+      "country": "United States",
+      "countryCode": "🇺🇸",
+      "city": "Kecksburg",
+      "region": "Pennsylvania",
+      "coords": [40.1867, -79.4614]
+    },
+    "date": "1965-12-09",
+    "year": 1965,
+    "credibilityScore": 77,
+    "threatLevel": 3,
+    "alienType": "Unknown",
+    "overview": "A fireball was seen across six US states and Canada before something crashed in the woods near Kecksburg. Witnesses described an acorn-shaped object with hieroglyphic-like writing. The military cordoned the area and removed an object on a flatbed truck.",
+    "timeline": [
+      {"time": "16:47", "title": "Fireball Observed", "description": "Object seen across multiple states"},
+      {"time": "17:00", "title": "Impact", "description": "Object crashes in Kecksburg woods"},
+      {"time": "18:00", "title": "Military Arrives", "description": "Area cordoned off by Army units"},
+      {"time": "Night", "title": "Removal", "description": "Object loaded onto flatbed and removed"}
+    ],
+    "witnesses": [
+      {"id": "w20", "name": "Bill Bulebush", "occupation": "Local Resident", "testimony": "The military was everywhere. They took something out of those woods on a flatbed truck.", "credibility": "medium", "verified": true}
+    ],
+    "probabilities": {"hoax": 15, "extraterrestrial": 55, "coverUp": 80},
+    "relatedTopics": ["Nazi Bell Theory", "Cosmos 96", "Military Recovery"],
+    "sources": ["Pittsburgh Tribune", "Unsolved Mysteries"],
+    "featured": false,
+    "tags": ["crash", "recovery", "hieroglyphics"]
+  },
+  {
+    "id": "20",
+    "slug": "gimbal-2015",
+    "title": "GIMBAL UAP Video",
+    "subtitle": "Pentagon Released Footage",
+    "location": {
+      "country": "United States",
+      "countryCode": "🇺🇸",
+      "city": "Atlantic Ocean",
+      "region": "East Coast",
+      "coords": [36.0000, -72.0000]
+    },
+    "date": "2015-01-21",
+    "year": 2015,
+    "credibilityScore": 94,
+    "threatLevel": 3,
+    "alienType": "Unknown",
+    "overview": "Navy pilots recorded infrared footage of a rotating, disc-shaped object with no visible means of propulsion. The video, officially released by the Pentagon, shows the object defying conventional aerodynamics. Pilots can be heard expressing amazement at the object's capabilities.",
+    "timeline": [
+      {"time": "Daytime", "title": "Detection", "description": "Object tracked on radar and FLIR"},
+      {"time": "Engagement", "title": "Recording", "description": "Pilots capture infrared footage"},
+      {"time": "2017", "title": "Leak", "description": "Video leaked to New York Times"},
+      {"time": "2020", "title": "Official Release", "description": "Pentagon officially releases footage"}
+    ],
+    "witnesses": [
+      {"id": "w21", "name": "Navy Pilots", "occupation": "US Navy", "testimony": "There's a whole fleet of them! Look at that thing! It's rotating!", "credibility": "high", "verified": true}
+    ],
+    "probabilities": {"hoax": 1, "extraterrestrial": 75, "coverUp": 60},
+    "relatedTopics": ["AATIP", "Go Fast Video", "Pentagon UAP Task Force"],
+    "sources": ["Pentagon Release", "New York Times"],
+    "featured": true,
+    "tags": ["official-footage", "pentagon", "flir"]
+  }
+]

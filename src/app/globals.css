@@ -1,0 +1,674 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+/* ============================================
+   ET SCAN - Matrix Theme Design System
+   ============================================ */
+
+:root {
+  /* Core Colors */
+  --alien-black: #050505;
+  --alien-dark: #0a0a0a;
+  --alien-darker: #030303;
+  
+  /* Matrix Green */
+  --matrix-green: #00FF41;
+  --matrix-green-dim: #00cc33;
+  --matrix-green-dark: #00991f;
+  --matrix-green-glow: rgba(0, 255, 65, 0.4);
+  
+  /* Cyber Cyan */
+  --cyber-cyan: #00FFFF;
+  --cyber-cyan-dim: #00cccc;
+  --cyber-cyan-glow: rgba(0, 255, 255, 0.4);
+  
+  /* Warning Colors */
+  --warning-red: #FF0040;
+  --warning-red-dim: #cc0033;
+  --warning-red-glow: rgba(255, 0, 64, 0.4);
+  --warning-orange: #FF6B00;
+  --warning-yellow: #FFD700;
+  
+  /* Glassmorphism */
+  --panel-bg: rgba(10, 10, 10, 0.85);
+  --panel-bg-hover: rgba(15, 15, 15, 0.9);
+  --glass-border: rgba(0, 255, 65, 0.15);
+  --glass-border-hover: rgba(0, 255, 65, 0.3);
+  
+  /* Text Colors */
+  --text-primary: #e0e0e0;
+  --text-secondary: #888888;
+  --text-muted: #555555;
+  
+  /* Fonts */
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  --font-body: 'Outfit', sans-serif;
+  --font-terminal: 'Fira Code', monospace;
+}
+
+/* ============================================
+   BASE STYLES
+   ============================================ */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--alien-black);
+  color: var(--text-primary);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--matrix-green);
+  color: var(--alien-black);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--alien-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--matrix-green-dark);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--matrix-green-dim);
+}
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.font-terminal {
+  font-family: var(--font-terminal);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+/* ============================================
+   GLASSMORPHISM UTILITIES
+   ============================================ */
+
+.glass-panel {
+  background: var(--panel-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 8px;
+}
+
+.glass-panel-hover:hover {
+  background: var(--panel-bg-hover);
+  border-color: var(--glass-border-hover);
+  box-shadow: 0 0 20px var(--matrix-green-glow);
+}
+
+/* ============================================
+   NEON GLOW EFFECTS
+   ============================================ */
+
+.neon-text {
+  color: var(--matrix-green);
+  text-shadow: 
+    0 0 5px var(--matrix-green-glow),
+    0 0 10px var(--matrix-green-glow),
+    0 0 20px var(--matrix-green-glow);
+}
+
+.neon-text-cyan {
+  color: var(--cyber-cyan);
+  text-shadow: 
+    0 0 5px var(--cyber-cyan-glow),
+    0 0 10px var(--cyber-cyan-glow),
+    0 0 20px var(--cyber-cyan-glow);
+}
+
+.neon-text-red {
+  color: var(--warning-red);
+  text-shadow: 
+    0 0 5px var(--warning-red-glow),
+    0 0 10px var(--warning-red-glow),
+    0 0 20px var(--warning-red-glow);
+}
+
+.neon-border {
+  border-color: var(--matrix-green);
+  box-shadow: 
+    0 0 5px var(--matrix-green-glow),
+    inset 0 0 5px var(--matrix-green-glow);
+}
+
+.neon-border-cyan {
+  border-color: var(--cyber-cyan);
+  box-shadow: 
+    0 0 5px var(--cyber-cyan-glow),
+    inset 0 0 5px var(--cyber-cyan-glow);
+}
+
+.neon-glow {
+  box-shadow: 0 0 20px var(--matrix-green-glow);
+}
+
+/* ============================================
+   GLITCH EFFECT
+   ============================================ */
+
+@keyframes glitch {
+  0% {
+    clip-path: inset(40% 0 61% 0);
+    transform: translate(-2px, 2px);
+  }
+  20% {
+    clip-path: inset(92% 0 1% 0);
+    transform: translate(2px, -2px);
+  }
+  40% {
+    clip-path: inset(43% 0 1% 0);
+    transform: translate(-2px, 0);
+  }
+  60% {
+    clip-path: inset(25% 0 58% 0);
+    transform: translate(2px, 2px);
+  }
+  80% {
+    clip-path: inset(54% 0 7% 0);
+    transform: translate(-2px, -2px);
+  }
+  100% {
+    clip-path: inset(58% 0 43% 0);
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes glitch-2 {
+  0% {
+    clip-path: inset(25% 0 58% 0);
+    transform: translate(2px, -2px);
+  }
+  20% {
+    clip-path: inset(54% 0 7% 0);
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    clip-path: inset(58% 0 43% 0);
+    transform: translate(2px, 0);
+  }
+  60% {
+    clip-path: inset(40% 0 61% 0);
+    transform: translate(-2px, -2px);
+  }
+  80% {
+    clip-path: inset(92% 0 1% 0);
+    transform: translate(2px, 2px);
+  }
+  100% {
+    clip-path: inset(43% 0 1% 0);
+    transform: translate(0, 0);
+  }
+}
+
+.glitch {
+  position: relative;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.glitch::before {
+  color: var(--cyber-cyan);
+  animation: glitch 2s infinite linear alternate-reverse;
+  z-index: -1;
+}
+
+.glitch::after {
+  color: var(--warning-red);
+  animation: glitch-2 3s infinite linear alternate-reverse;
+  z-index: -2;
+}
+
+/* ============================================
+   SCAN LINES EFFECT
+   ============================================ */
+
+@keyframes scanline {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+.scan-lines {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.15) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  opacity: 0.3;
+}
+
+.scan-line-moving {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(
+    180deg,
+    transparent,
+    var(--matrix-green-glow),
+    transparent
+  );
+  animation: scanline 8s linear infinite;
+  pointer-events: none;
+  z-index: 9998;
+  opacity: 0.5;
+}
+
+/* ============================================
+   RADAR SWEEP
+   ============================================ */
+
+@keyframes radar-sweep {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.radar-sweep {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    var(--matrix-green-glow) 20deg,
+    transparent 60deg
+  );
+  animation: radar-sweep 4s linear infinite;
+  opacity: 0.3;
+}
+
+/* ============================================
+   PULSE ANIMATIONS
+   ============================================ */
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px var(--matrix-green-glow);
+  }
+  50% {
+    box-shadow: 0 0 20px var(--matrix-green-glow), 0 0 40px var(--matrix-green-glow);
+  }
+}
+
+@keyframes pulse-scale {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+}
+
+@keyframes ping {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.pulse-scale {
+  animation: pulse-scale 2s ease-in-out infinite;
+}
+
+/* ============================================
+   GRID OVERLAY
+   ============================================ */
+
+.grid-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  background-image: 
+    linear-gradient(rgba(0, 255, 65, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 255, 65, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* ============================================
+   BUTTONS
+   ============================================ */
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--matrix-green-dark), var(--matrix-green-dim));
+  color: var(--alien-black);
+  font-family: var(--font-mono);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: var(--matrix-green);
+  box-shadow: 0 0 20px var(--matrix-green-glow);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--matrix-green);
+  font-family: var(--font-mono);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  border: 1px solid var(--matrix-green);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: rgba(0, 255, 65, 0.1);
+  box-shadow: 0 0 15px var(--matrix-green-glow);
+}
+
+.btn-danger {
+  background: linear-gradient(135deg, var(--warning-red-dim), var(--warning-red));
+  color: white;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-danger:hover {
+  box-shadow: 0 0 20px var(--warning-red-glow);
+  transform: translateY(-2px);
+}
+
+/* ============================================
+   FORM INPUTS
+   ============================================ */
+
+.input-field {
+  background: var(--alien-dark);
+  border: 1px solid var(--glass-border);
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: var(--matrix-green);
+  box-shadow: 0 0 10px var(--matrix-green-glow);
+}
+
+.input-field::placeholder {
+  color: var(--text-muted);
+}
+
+/* ============================================
+   TERMINAL STYLE
+   ============================================ */
+
+.terminal-text {
+  font-family: var(--font-terminal);
+  font-size: 0.875rem;
+  color: var(--matrix-green);
+  line-height: 1.6;
+}
+
+.terminal-cursor {
+  display: inline-block;
+  width: 8px;
+  height: 1em;
+  background: var(--matrix-green);
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* ============================================
+   DATA TREE STYLE
+   ============================================ */
+
+.data-tree {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.data-tree-key {
+  color: var(--text-muted);
+}
+
+.data-tree-key::before {
+  content: '├── ';
+  color: var(--text-muted);
+}
+
+.data-tree-key:last-child::before {
+  content: '└── ';
+}
+
+.data-tree-value {
+  color: var(--matrix-green);
+}
+
+/* ============================================
+   THREAT LEVEL COLORS
+   ============================================ */
+
+.threat-1 { color: var(--matrix-green); }
+.threat-2 { color: #7FFF00; }
+.threat-3 { color: var(--warning-yellow); }
+.threat-4 { color: var(--warning-orange); }
+.threat-5 { color: var(--warning-red); }
+
+.threat-bg-1 { background: var(--matrix-green); }
+.threat-bg-2 { background: #7FFF00; }
+.threat-bg-3 { background: var(--warning-yellow); }
+.threat-bg-4 { background: var(--warning-orange); }
+.threat-bg-5 { background: var(--warning-red); }
+
+/* ============================================
+   LEAFLET MAP OVERRIDES
+   ============================================ */
+
+.leaflet-container {
+  background: var(--alien-black) !important;
+  font-family: var(--font-body) !important;
+}
+
+.leaflet-popup-content-wrapper {
+  background: var(--panel-bg) !important;
+  border: 1px solid var(--glass-border) !important;
+  border-radius: 8px !important;
+  color: var(--text-primary) !important;
+}
+
+.leaflet-popup-tip {
+  background: var(--panel-bg) !important;
+}
+
+.leaflet-control-zoom {
+  border: 1px solid var(--glass-border) !important;
+  border-radius: 4px !important;
+  overflow: hidden;
+}
+
+.leaflet-control-zoom a {
+  background: var(--panel-bg) !important;
+  color: var(--matrix-green) !important;
+  border-bottom: 1px solid var(--glass-border) !important;
+}
+
+.leaflet-control-zoom a:hover {
+  background: var(--panel-bg-hover) !important;
+}
+
+/* ============================================
+   RESPONSIVE UTILITIES
+   ============================================ */
+
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .hide-desktop {
+    display: none !important;
+  }
+}
+
+/* ============================================
+   ANIMATION UTILITIES
+   ============================================ */
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.5s ease-out;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in-right {
+  animation: slideInRight 0.5s ease-out;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ============================================
+   COUNTER ANIMATION
+   ============================================ */
+
+@keyframes count-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.counter-value {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
