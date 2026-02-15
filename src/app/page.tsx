@@ -10,7 +10,7 @@ import GlitchText from '@/components/ui/GlitchText';
 import TerminalFeed from '@/components/ui/TerminalFeed';
 import AnimatedCounter from '@/components/ui/AnimatedCounter';
 import ActivityIndex from '@/components/features/ActivityIndex';
-import StaticWorldMap from '@/components/map/StaticWorldMap';
+import WorldMap from '@/components/map/WorldMap';
 import { getThreatColor, getAlienTypeIcon } from '@/lib/utils';
 
 export default function HomePage() {
@@ -76,9 +76,10 @@ export default function HomePage() {
             <div className="lg:col-span-3">
               <GlassPanel className="overflow-hidden">
                 <div className="h-[400px] md:h-[500px] lg:h-[600px]">
-                  <StaticWorldMap
+                  <WorldMap
                     sightings={sightings}
                     onMarkerClick={setSelectedSighting}
+                    selectedSighting={selectedSighting}
                   />
                 </div>
               </GlassPanel>

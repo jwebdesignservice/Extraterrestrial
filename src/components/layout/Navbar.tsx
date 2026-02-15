@@ -20,9 +20,9 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50">
+    <nav className="fixed top-0 left-0 right-0 z-[100]">
       {/* Main navbar */}
-      <div className="glass-panel border-b border-[var(--glass-border)] backdrop-blur-xl">
+      <div className="glass-panel border-b border-[var(--glass-border)] backdrop-blur-xl relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
@@ -43,13 +43,13 @@ export default function Navbar() {
             </Link>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center gap-1">
+            <div className="hidden md:flex items-center gap-1 relative z-10">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
                   className={cn(
-                    'px-4 py-2 font-mono text-sm uppercase tracking-wider transition-all duration-300 rounded',
+                    'px-4 py-2 font-mono text-sm uppercase tracking-wider transition-all duration-300 rounded relative z-10',
                     pathname === link.href
                       ? 'text-[var(--matrix-green)] bg-[var(--matrix-green)]/10'
                       : 'text-[var(--text-secondary)] hover:text-[var(--matrix-green)] hover:bg-[var(--matrix-green)]/5'
@@ -61,7 +61,7 @@ export default function Navbar() {
             </div>
 
             {/* Search & Actions */}
-            <div className="hidden md:flex items-center gap-4">
+            <div className="hidden md:flex items-center gap-4 relative z-10">
               {/* Search */}
               <div className="relative">
                 <input
