@@ -5,6 +5,7 @@ import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import MarqueeBar from '@/components/layout/MarqueeBar';
 import SoundToggle from '@/components/features/SoundToggle';
+import ClientWrapper from '@/components/layout/ClientWrapper';
 
 export const metadata: Metadata = {
   title: 'ET SCAN ($ET) | Global Extraterrestrial Intelligence Network',
@@ -25,23 +26,25 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased min-h-screen flex flex-col">
-        {/* Background Effects */}
-        <div className="grid-overlay" />
-        
-        {/* Navigation */}
-        <Navbar />
-        <MarqueeBar />
-        
-        {/* Main Content */}
-        <main className="flex-1 pt-[104px]">
-          {children}
-        </main>
-        
-        {/* Footer */}
-        <Footer />
-        
-        {/* Sound Toggle */}
-        <SoundToggle />
+        <ClientWrapper>
+          {/* Background Effects */}
+          <div className="grid-overlay" />
+          
+          {/* Navigation */}
+          <Navbar />
+          <MarqueeBar />
+          
+          {/* Main Content */}
+          <main className="flex-1 pt-[104px]">
+        {children}
+          </main>
+          
+          {/* Footer */}
+          <Footer />
+          
+          {/* Sound Toggle */}
+          <SoundToggle />
+        </ClientWrapper>
       </body>
     </html>
   );

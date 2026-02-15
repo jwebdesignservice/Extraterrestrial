@@ -155,6 +155,65 @@ const priorityRegions = {
     { lat: 35.4676, lng: -97.5164 },  // Oklahoma City
     { lat: 35.0844, lng: -106.6504 }, // Albuquerque
     { lat: 33.4152, lng: -111.8315 }, // Scottsdale
+    // Northern USA - Alaska & Northern States
+    { lat: 61.2181, lng: -149.9003 }, // Anchorage
+    { lat: 64.8378, lng: -147.7164 }, // Fairbanks
+    { lat: 58.3019, lng: -134.4197 }, // Juneau
+    { lat: 46.8772, lng: -96.7898 },  // Fargo
+    { lat: 46.7867, lng: -92.1005 },  // Duluth
+    { lat: 48.7596, lng: -122.4886 }, // Bellingham
+    { lat: 47.9253, lng: -97.0329 },  // Grand Forks
+    { lat: 44.0682, lng: -114.7420 }, // Idaho
+    { lat: 46.8797, lng: -113.9932 }, // Missoula
+    { lat: 45.6770, lng: -111.0429 }, // Bozeman
+    { lat: 48.2325, lng: -101.2963 }, // Minot
+    { lat: 48.4001, lng: -89.2477 },  // Thunder Bay area
+  ],
+  greenland: [
+    { lat: 64.1814, lng: -51.6941 },  // Nuuk
+    { lat: 69.2198, lng: -51.0986 },  // Ilulissat
+    { lat: 66.9390, lng: -53.6718 },  // Sisimiut
+    { lat: 70.4853, lng: -52.2730 },  // Aasiaat
+    { lat: 72.7868, lng: -56.1474 },  // Upernavik
+    { lat: 76.5312, lng: -68.7032 },  // Qaanaaq (Thule)
+    { lat: 60.7167, lng: -46.0333 },  // Narsarsuaq
+    { lat: 65.6115, lng: -37.6367 },  // Tasiilaq
+    { lat: 77.4670, lng: -69.2285 },  // Pituffik
+    { lat: 68.7098, lng: -52.8690 },  // Qeqertarsuaq
+    { lat: 71.2906, lng: -51.7400 },  // Uummannaq
+    { lat: 63.0667, lng: -50.6833 },  // Paamiut
+  ],
+  africa: [
+    { lat: 30.0444, lng: 31.2357 },   // Cairo
+    { lat: 36.8065, lng: 10.1815 },   // Tunis
+    { lat: 33.5731, lng: -7.5898 },   // Casablanca
+    { lat: -33.9249, lng: 18.4241 },  // Cape Town
+    { lat: -26.2041, lng: 28.0473 },  // Johannesburg
+    { lat: -1.2921, lng: 36.8219 },   // Nairobi
+    { lat: 6.5244, lng: 3.3792 },     // Lagos
+    { lat: 5.6037, lng: -0.1870 },    // Accra
+    { lat: 14.6928, lng: -17.4467 },  // Dakar
+    { lat: 9.0579, lng: 7.4951 },     // Abuja
+    { lat: -4.4419, lng: 15.2663 },   // Kinshasa
+    { lat: -6.1659, lng: 39.2026 },   // Dar es Salaam
+    { lat: 9.0320, lng: 38.7469 },    // Addis Ababa
+    { lat: 36.7538, lng: 3.0588 },    // Algiers
+    { lat: 32.8872, lng: 13.1913 },   // Tripoli
+    { lat: 15.5007, lng: 32.5599 },   // Khartoum
+    { lat: 12.6392, lng: -8.0029 },   // Bamako
+    { lat: 6.3703, lng: 2.3912 },     // Cotonou
+    { lat: 4.0511, lng: 9.7679 },     // Douala
+    { lat: 0.3476, lng: 32.5825 },    // Kampala
+    { lat: -15.3875, lng: 28.3228 },  // Lusaka
+    { lat: -17.8292, lng: 31.0522 },  // Harare
+    { lat: -25.9653, lng: 32.5892 },  // Maputo
+    { lat: -18.8792, lng: 47.5079 },  // Antananarivo
+    { lat: 11.5514, lng: 43.1456 },   // Djibouti
+    { lat: -4.2634, lng: 15.2429 },   // Brazzaville
+    { lat: -8.8383, lng: 13.2344 },   // Luanda
+    { lat: 3.8480, lng: 11.5021 },    // Yaoundé
+    { lat: 13.5116, lng: 2.1254 },    // Niamey
+    { lat: 12.1075, lng: -1.5585 },   // Ouagadougou
   ],
   europe: [
     { lat: 51.5074, lng: -0.1278 },   // London
@@ -221,13 +280,15 @@ const priorityRegions = {
 const generateHeatMapPoints = (count: number) => {
   const points: Array<{ lat: number; lng: number; intensity: 'low' | 'medium' | 'high' }> = [];
   
-  // Distribution: 25% USA, 25% Europe, 15% Russia, 35% scattered globally
-  const usaCount = Math.floor(count * 0.25);
-  const europeCount = Math.floor(count * 0.25);
-  const russiaCount = Math.floor(count * 0.15);
-  const scatteredCount = count - usaCount - europeCount - russiaCount;
+  // Distribution: 20% USA, 20% Europe, 12% Russia, 10% Greenland, 15% Africa, 23% scattered globally
+  const usaCount = Math.floor(count * 0.20);
+  const europeCount = Math.floor(count * 0.20);
+  const russiaCount = Math.floor(count * 0.12);
+  const greenlandCount = Math.floor(count * 0.10);
+  const africaCount = Math.floor(count * 0.15);
+  const scatteredCount = count - usaCount - europeCount - russiaCount - greenlandCount - africaCount;
   
-  // Generate USA points
+  // Generate USA points (including Northern USA/Alaska)
   for (let i = 0; i < usaCount; i++) {
     const baseLoc = priorityRegions.usa[Math.floor(Math.random() * priorityRegions.usa.length)];
     const latOffset = (Math.random() - 0.5) * 8;
@@ -266,6 +327,32 @@ const generateHeatMapPoints = (count: number) => {
     points.push({ lat: baseLoc.lat + latOffset, lng: baseLoc.lng + lngOffset, intensity });
   }
   
+  // Generate Greenland points
+  for (let i = 0; i < greenlandCount; i++) {
+    const baseLoc = priorityRegions.greenland[Math.floor(Math.random() * priorityRegions.greenland.length)];
+    const latOffset = (Math.random() - 0.5) * 6;
+    const lngOffset = (Math.random() - 0.5) * 8;
+    
+    const intensityRoll = Math.random();
+    const intensity: 'low' | 'medium' | 'high' = 
+      intensityRoll > 0.5 ? 'high' : intensityRoll > 0.2 ? 'medium' : 'low';
+    
+    points.push({ lat: baseLoc.lat + latOffset, lng: baseLoc.lng + lngOffset, intensity });
+  }
+  
+  // Generate Africa points
+  for (let i = 0; i < africaCount; i++) {
+    const baseLoc = priorityRegions.africa[Math.floor(Math.random() * priorityRegions.africa.length)];
+    const latOffset = (Math.random() - 0.5) * 10;
+    const lngOffset = (Math.random() - 0.5) * 10;
+    
+    const intensityRoll = Math.random();
+    const intensity: 'low' | 'medium' | 'high' = 
+      intensityRoll > 0.55 ? 'high' : intensityRoll > 0.25 ? 'medium' : 'low';
+    
+    points.push({ lat: baseLoc.lat + latOffset, lng: baseLoc.lng + lngOffset, intensity });
+  }
+  
   // Generate scattered points across ALL land locations worldwide
   for (let i = 0; i < scatteredCount; i++) {
     const baseLoc = landLocations[Math.floor(Math.random() * landLocations.length)];
@@ -299,7 +386,7 @@ export default function WorldMap({ sightings, onMarkerClick }: WorldMapProps) {
     L: any;
   } | null>(null);
 
-  const heatMapPoints = useMemo(() => generateHeatMapPoints(800), []);
+  const heatMapPoints = useMemo(() => generateHeatMapPoints(1200), []);
 
   // Detect mobile/tablet
   useEffect(() => {
@@ -326,9 +413,19 @@ export default function WorldMap({ sightings, onMarkerClick }: WorldMapProps) {
 
   if (!mounted || !LeafletComponents) {
     return (
-      <div className="w-full h-full bg-[var(--alien-dark)] flex items-center justify-center">
-        <div className="text-[var(--matrix-green)] font-mono animate-pulse">
-          Initializing Global Tracking System...
+      <div className="w-full h-full bg-[var(--alien-dark)] flex items-center justify-center absolute inset-0">
+        <div className="flex flex-col items-center justify-center gap-4">
+          <div className="relative w-16 h-16">
+            <div className="absolute inset-0 border-2 border-[var(--matrix-green)] rounded-full animate-ping opacity-20"></div>
+            <div className="absolute inset-2 border-2 border-[var(--matrix-green)] rounded-full animate-spin" style={{ borderTopColor: 'transparent' }}></div>
+            <div className="absolute inset-4 border-2 border-[var(--cyber-cyan)] rounded-full animate-spin" style={{ animationDirection: 'reverse', borderBottomColor: 'transparent' }}></div>
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-3 h-3 bg-[var(--matrix-green)] rounded-full animate-pulse"></div>
+            </div>
+          </div>
+          <div className="text-[var(--matrix-green)] font-mono text-sm animate-pulse text-center">
+            Initializing Global Tracking System...
+          </div>
         </div>
       </div>
     );
