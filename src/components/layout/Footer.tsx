@@ -41,9 +41,9 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-center gap-2 text-sm font-mono">
             <span className="text-[var(--text-muted)]">CA:</span>
-            <span className="text-[var(--matrix-green)]">0xETSCAN...ToKeN2024</span>
+            <span className="text-[var(--matrix-green)]">43zyyTtrJaV3HLnpDWCFG694g4L3Lo32SZkEy7Rcpump</span>
             <button
-              onClick={() => navigator.clipboard.writeText('0xAL13NM3T4...ToKeN2024')}
+              onClick={() => navigator.clipboard.writeText('43zyyTtrJaV3HLnpDWCFG694g4L3Lo32SZkEy7Rcpump')}
               className="p-1 hover:text-[var(--matrix-green)] text-[var(--text-muted)] transition-colors"
               aria-label="Copy contract address"
             >
