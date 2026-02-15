@@ -91,7 +91,6 @@ export default function HomePage() {
                   <WorldMap
                     sightings={sightings}
                     onMarkerClick={setSelectedSighting}
-                    selectedSighting={selectedSighting}
                   />
                 </div>
               </GlassPanel>

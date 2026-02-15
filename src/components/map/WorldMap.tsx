@@ -217,25 +217,25 @@ const priorityRegions = {
   ],
 };
 
-// Generate random heat map points on land only - concentrated in USA, Europe, Russia
+// Generate random heat map points - scattered across the whole map with concentration in key areas
 const generateHeatMapPoints = (count: number) => {
   const points: Array<{ lat: number; lng: number; intensity: 'low' | 'medium' | 'high' }> = [];
   
-  // Distribution: 35% USA, 35% Europe, 20% Russia, 10% rest of world
-  const usaCount = Math.floor(count * 0.35);
-  const europeCount = Math.floor(count * 0.35);
-  const russiaCount = Math.floor(count * 0.20);
-  const otherCount = count - usaCount - europeCount - russiaCount;
+  // Distribution: 25% USA, 25% Europe, 15% Russia, 35% scattered globally
+  const usaCount = Math.floor(count * 0.25);
+  const europeCount = Math.floor(count * 0.25);
+  const russiaCount = Math.floor(count * 0.15);
+  const scatteredCount = count - usaCount - europeCount - russiaCount;
   
   // Generate USA points
   for (let i = 0; i < usaCount; i++) {
     const baseLoc = priorityRegions.usa[Math.floor(Math.random() * priorityRegions.usa.length)];
-    const latOffset = (Math.random() - 0.5) * 6;
-    const lngOffset = (Math.random() - 0.5) * 6;
+    const latOffset = (Math.random() - 0.5) * 8;
+    const lngOffset = (Math.random() - 0.5) * 10;
     
     const intensityRoll = Math.random();
     const intensity: 'low' | 'medium' | 'high' = 
-      intensityRoll > 0.7 ? 'high' : intensityRoll > 0.3 ? 'medium' : 'low';
+      intensityRoll > 0.6 ? 'high' : intensityRoll > 0.25 ? 'medium' : 'low';
     
     points.push({ lat: baseLoc.lat + latOffset, lng: baseLoc.lng + lngOffset, intensity });
   }
@@ -243,12 +243,12 @@ const generateHeatMapPoints = (count: number) => {
   // Generate Europe points
   for (let i = 0; i < europeCount; i++) {
     const baseLoc = priorityRegions.europe[Math.floor(Math.random() * priorityRegions.europe.length)];
-    const latOffset = (Math.random() - 0.5) * 5;
-    const lngOffset = (Math.random() - 0.5) * 5;
+    const latOffset = (Math.random() - 0.5) * 6;
+    const lngOffset = (Math.random() - 0.5) * 8;
     
     const intensityRoll = Math.random();
     const intensity: 'low' | 'medium' | 'high' = 
-      intensityRoll > 0.7 ? 'high' : intensityRoll > 0.3 ? 'medium' : 'low';
+      intensityRoll > 0.6 ? 'high' : intensityRoll > 0.25 ? 'medium' : 'low';
     
     points.push({ lat: baseLoc.lat + latOffset, lng: baseLoc.lng + lngOffset, intensity });
   }
@@ -256,25 +256,25 @@ const generateHeatMapPoints = (count: number) => {
   // Generate Russia points
   for (let i = 0; i < russiaCount; i++) {
     const baseLoc = priorityRegions.russia[Math.floor(Math.random() * priorityRegions.russia.length)];
-    const latOffset = (Math.random() - 0.5) * 8;
-    const lngOffset = (Math.random() - 0.5) * 12;
+    const latOffset = (Math.random() - 0.5) * 10;
+    const lngOffset = (Math.random() - 0.5) * 15;
     
     const intensityRoll = Math.random();
     const intensity: 'low' | 'medium' | 'high' = 
-      intensityRoll > 0.75 ? 'high' : intensityRoll > 0.35 ? 'medium' : 'low';
+      intensityRoll > 0.65 ? 'high' : intensityRoll > 0.3 ? 'medium' : 'low';
     
     points.push({ lat: baseLoc.lat + latOffset, lng: baseLoc.lng + lngOffset, intensity });
   }
   
-  // Generate rest of world points
-  for (let i = 0; i < otherCount; i++) {
+  // Generate scattered points across ALL land locations worldwide
+  for (let i = 0; i < scatteredCount; i++) {
     const baseLoc = landLocations[Math.floor(Math.random() * landLocations.length)];
-    const latOffset = (Math.random() - 0.5) * 4;
-    const lngOffset = (Math.random() - 0.5) * 4;
+    const latOffset = (Math.random() - 0.5) * 10;
+    const lngOffset = (Math.random() - 0.5) * 12;
     
     const intensityRoll = Math.random();
     const intensity: 'low' | 'medium' | 'high' = 
-      intensityRoll > 0.85 ? 'high' : intensityRoll > 0.5 ? 'medium' : 'low';
+      intensityRoll > 0.7 ? 'high' : intensityRoll > 0.35 ? 'medium' : 'low';
     
     points.push({ lat: baseLoc.lat + latOffset, lng: baseLoc.lng + lngOffset, intensity });
   }
@@ -298,7 +298,7 @@ export default function WorldMap({ sightings, onMarkerClick }: WorldMapProps) {
     L: any;
   } | null>(null);
 
-  const heatMapPoints = useMemo(() => generateHeatMapPoints(500), []);
+  const heatMapPoints = useMemo(() => generateHeatMapPoints(800), []);
 
   useEffect(() => {
     // Dynamically import Leaflet on client side only
@@ -369,9 +369,9 @@ export default function WorldMap({ sightings, onMarkerClick }: WorldMapProps) {
 
   const getHeatColor = (intensity: 'low' | 'medium' | 'high') => {
     switch (intensity) {
-      case 'high': return '#FF0040';
-      case 'medium': return '#FFD700';
-      case 'low': return '#00FF41';
+      case 'high': return '#00FF41';    // Bright matrix green
+      case 'medium': return '#7FFF00';  // Yellow-green / Chartreuse
+      case 'low': return '#32CD32';     // Lime green
     }
   };
 

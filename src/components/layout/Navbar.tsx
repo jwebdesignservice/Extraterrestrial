@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { cn } from '@/lib/utils';
@@ -11,7 +12,6 @@ const navLinks = [
   { href: '/database', label: 'Database' },
   { href: '/token', label: 'Token' },
   { href: '/upload', label: 'Report' },
-  { href: '/scanner', label: 'Scanner' },
 ];
 
 export default function Navbar() {
@@ -27,10 +27,14 @@ export default function Navbar() {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3 group">
-              <div className="relative w-10 h-10 flex items-center justify-center">
-                <div className="absolute inset-0 bg-[var(--matrix-green)] rounded-full opacity-20 group-hover:opacity-40 transition-opacity" />
-                <div className="absolute inset-1 bg-[var(--matrix-green)] rounded-full opacity-10 animate-ping" />
-                <span className="text-2xl relative z-10">👽</span>
+              <div className="relative w-10 h-10 flex items-center justify-center overflow-hidden">
+                <Image
+                  src="/images/et-logo.jpg"
+                  alt="ET Scan Logo"
+                  width={40}
+                  height={40}
+                  className="object-contain group-hover:scale-110 transition-transform"
+                />
               </div>
               <div className="flex flex-col">
                 <span className="font-mono font-bold text-[var(--matrix-green)] text-lg tracking-wider">

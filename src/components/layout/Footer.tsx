@@ -1,13 +1,13 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 const footerLinks = {
   explore: [
     { href: '/', label: 'World Map' },
     { href: '/database', label: 'Sightings Database' },
     { href: '/upload', label: 'Report Sighting' },
-    { href: '/scanner', label: 'DNA Scanner' },
   ],
   token: [
     { href: '/token', label: 'Token Info' },
@@ -79,7 +79,13 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-3 mb-4">
-              <span className="text-3xl">👽</span>
+              <Image
+                src="/images/et-logo.jpg"
+                alt="ET Scan Logo"
+                width={40}
+                height={40}
+                className="object-contain"
+              />
               <span className="font-mono font-bold text-[var(--matrix-green)] text-xl tracking-wider">
                 ET SCAN
               </span>
