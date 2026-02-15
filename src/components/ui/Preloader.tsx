@@ -32,10 +32,10 @@ export default function Preloader() {
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.5, ease: 'easeInOut' }}
-          className="fixed inset-0 z-[9999] bg-[var(--alien-black)] flex items-center justify-center overflow-hidden"
+          className="fixed inset-0 z-[9999] bg-black flex items-center justify-center overflow-hidden"
         >
           {/* Background grid */}
-          <div className="absolute inset-0 opacity-20">
+          <div className="absolute inset-0 opacity-[0.05]">
             <div 
               className="w-full h-full"
               style={{
@@ -47,16 +47,6 @@ export default function Preloader() {
               }}
             />
           </div>
-
-          {/* Animated scan lines */}
-          <motion.div
-            className="absolute inset-0 opacity-10"
-            style={{
-              background: 'repeating-linear-gradient(0deg, transparent, transparent 2px, var(--matrix-green) 2px, var(--matrix-green) 4px)',
-            }}
-            animate={{ y: [0, 20] }}
-            transition={{ duration: 0.5, repeat: Infinity, ease: 'linear' }}
-          />
 
           {/* Main content */}
           <div className="relative z-10 flex flex-col items-center">
