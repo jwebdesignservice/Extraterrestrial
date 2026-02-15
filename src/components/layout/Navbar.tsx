@@ -26,14 +26,14 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-3 group">
-              <div className="relative w-10 h-10 flex items-center justify-center overflow-hidden">
+            <Link href="/" className="flex items-center gap-2 group">
+              <div className="relative w-8 h-8 flex items-center justify-center">
                 <Image
                   src="/images/et-logo.jpg"
                   alt="ET Scan Logo"
-                  width={40}
-                  height={40}
-                  className="object-contain group-hover:scale-110 transition-transform"
+                  width={32}
+                  height={32}
+                  className="w-8 h-8 object-contain group-hover:scale-110 transition-transform"
                 />
               </div>
               <div className="flex flex-col">
