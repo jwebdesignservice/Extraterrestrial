@@ -289,6 +289,7 @@ interface WorldMapProps {
 
 export default function WorldMap({ sightings, onMarkerClick }: WorldMapProps) {
   const [mounted, setMounted] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   const [LeafletComponents, setLeafletComponents] = useState<{
     MapContainer: any;
     TileLayer: any;
@@ -299,6 +300,16 @@ export default function WorldMap({ sightings, onMarkerClick }: WorldMapProps) {
   } | null>(null);
 
   const heatMapPoints = useMemo(() => generateHeatMapPoints(800), []);
+
+  // Detect mobile/tablet
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 1024); // lg breakpoint
+    };
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   useEffect(() => {
     // Dynamically import Leaflet on client side only
@@ -398,14 +409,14 @@ export default function WorldMap({ sightings, onMarkerClick }: WorldMapProps) {
       className="w-full h-full"
       style={{ background: '#050505' }}
       zoomControl={false}
-      dragging={false}
+      dragging={isMobile}
       scrollWheelZoom={false}
       doubleClickZoom={false}
-      touchZoom={false}
+      touchZoom={isMobile}
       boxZoom={false}
       keyboard={false}
       minZoom={2}
-      maxZoom={2}
+      maxZoom={isMobile ? 5 : 2}
       worldCopyJump={false}
     >
       <TileLayer
