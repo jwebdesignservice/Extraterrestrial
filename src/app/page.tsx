@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useMemo } from 'react';
+import dynamic from 'next/dynamic';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import sightingsData from '@/data/sightings.json';
@@ -10,8 +11,19 @@ import GlitchText from '@/components/ui/GlitchText';
 import TerminalFeed from '@/components/ui/TerminalFeed';
 import AnimatedCounter from '@/components/ui/AnimatedCounter';
 import ActivityIndex from '@/components/features/ActivityIndex';
-import WorldMap from '@/components/map/WorldMap';
 import { getThreatColor, getAlienTypeIcon } from '@/lib/utils';
+
+// Dynamically import WorldMap to avoid SSR issues with Leaflet
+const WorldMap = dynamic(() => import('@/components/map/WorldMap'), {
+  ssr: false,
+  loading: () => (
+    <div className="w-full h-full bg-[var(--alien-dark)] flex items-center justify-center">
+      <div className="text-[var(--matrix-green)] font-mono animate-pulse">
+        Initializing Global Tracking System...
+      </div>
+    </div>
+  ),
+});
 
 export default function HomePage() {
   const [selectedSighting, setSelectedSighting] = useState<Sighting | null>(null);
