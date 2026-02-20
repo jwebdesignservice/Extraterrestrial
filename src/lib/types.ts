@@ -1,5 +1,5 @@
 // ============================================
-// ET SCAN - TypeScript Type Definitions
+// AlienScan - TypeScript Type Definitions
 // ============================================
 
 // Coordinates type

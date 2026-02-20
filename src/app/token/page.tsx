@@ -7,10 +7,9 @@ import tokenData from '@/data/token.json';
 import GlassPanel from '@/components/ui/GlassPanel';
 import GlitchText from '@/components/ui/GlitchText';
 import AnimatedCounter from '@/components/ui/AnimatedCounter';
-import { formatWithCommas, copyToClipboard } from '@/lib/utils';
+import { formatWithCommas } from '@/lib/utils';
 
 export default function TokenPage() {
-  const [copied, setCopied] = useState(false);
   const [burnedAmount, setBurnedAmount] = useState(tokenData.burnedAmount);
 
   useEffect(() => {
@@ -20,12 +19,6 @@ export default function TokenPage() {
     }, 5000);
     return () => clearInterval(interval);
   }, []);
-
-  const handleCopy = async () => {
-    await copyToClipboard(tokenData.contractAddress);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
 
   return (
     <div className="min-h-screen py-8 px-4">
@@ -38,7 +31,7 @@ export default function TokenPage() {
         >
           <div className="flex flex-wrap items-center gap-8 mb-6">
             <GlitchText
-              text="$ETS"
+              text="$ALIEN"
               className="font-mono text-5xl md:text-6xl text-[var(--matrix-green)]"
               as="h1"
             />
@@ -54,56 +47,8 @@ export default function TokenPage() {
             </div>
           </div>
 
-          {/* Contract Address */}
-          <GlassPanel className="p-4 mb-6">
-            <div className="flex items-center justify-between gap-4 flex-wrap">
-              <div>
-                <p className="text-[var(--text-muted)] text-xs font-mono uppercase mb-1">
-                  Contract Address
-                </p>
-                <p className="text-[var(--matrix-green)] font-mono break-all">
-                  {tokenData.contractAddress}
-                </p>
-              </div>
-              <button
-                onClick={handleCopy}
-                className="px-4 py-2 bg-[var(--alien-dark)] border border-[var(--glass-border)] rounded font-mono text-sm hover:border-[var(--matrix-green)] transition-colors"
-              >
-                {copied ? '✓ Copied!' : '📋 Copy'}
-              </button>
-            </div>
-          </GlassPanel>
-
-          {/* Exchange Links */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
-            {tokenData.exchanges.map((exchange) => (
-              <a
-                key={exchange.name}
-                href={exchange.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-4 glass-panel hover:border-[var(--matrix-green)] transition-all flex items-center justify-between"
-              >
-                <span className="text-[var(--text-primary)] font-medium">{exchange.name}</span>
-                <span className="text-[var(--text-muted)]">↗</span>
-              </a>
-            ))}
-          </div>
-
           {/* Action Buttons */}
           <div className="flex flex-wrap gap-3 mb-8">
-            <a
-              href="#"
-              className="px-6 py-3 bg-[var(--matrix-green)] text-[var(--alien-black)] font-mono font-bold uppercase tracking-wider rounded hover:shadow-[0_0_30px_var(--matrix-green-glow)] transition-all"
-            >
-              Buy on Pump.fun
-            </a>
-            <a
-              href="#"
-              className="px-6 py-3 bg-[var(--warning-red)] text-white font-mono font-bold uppercase tracking-wider rounded hover:shadow-[0_0_30px_var(--warning-red-glow)] transition-all"
-            >
-              View Chart
-            </a>
             <Link
               href="/"
               className="px-6 py-3 border border-[var(--glass-border)] text-[var(--text-secondary)] font-mono uppercase tracking-wider rounded hover:border-[var(--matrix-green)] transition-all"
@@ -184,7 +129,7 @@ export default function TokenPage() {
                 value={burnedAmount}
                 className="text-5xl md:text-6xl font-bold text-[var(--warning-red)] font-mono"
               />
-              <p className="text-[var(--text-muted)] mt-2">$ETS burned forever</p>
+              <p className="text-[var(--text-muted)] mt-2">$ALIEN burned forever</p>
             </div>
 
             <div className="space-y-2 font-mono text-sm">
@@ -212,7 +157,7 @@ export default function TokenPage() {
           <div className="grid md:grid-cols-3 gap-6">
             {[
               { step: 1, title: 'User Scans', desc: 'Every time someone explores a country, clan, or historical figure.' },
-              { step: 2, title: 'Tokens Burn', desc: 'A small amount of $ETS is automatically burned forever.' },
+              { step: 2, title: 'Tokens Burn', desc: 'A small amount of $ALIEN is automatically burned forever.' },
               { step: 3, title: 'Supply Decreases', desc: 'Total supply shrinks, increasing scarcity for holders.' },
             ].map((item) => (
               <motion.div
@@ -288,7 +233,7 @@ export default function TokenPage() {
           </div>
         </GlassPanel>
 
-        {/* Why $ETS */}
+        {/* Why $ALIEN */}
         <div className="grid md:grid-cols-2 gap-6 mb-8">
           {[
             { title: 'Deflationary', value: '100 burned/scan', desc: 'Every scan burns tokens, reducing supply over time. The more the platform is used, the scarcer the token becomes.' },
@@ -324,7 +269,6 @@ export default function TokenPage() {
               { href: '/', label: 'Map' },
               { href: '/database', label: 'Database' },
               { href: '/upload', label: 'Report Sighting' },
-              { href: '/scanner', label: 'DNA Scanner' },
             ].map((link) => (
               <Link
                 key={link.href}

@@ -24,7 +24,7 @@ const footerLinks = {
 const socialLinks = [
   {
     name: 'X (Twitter)',
-    href: 'https://x.com/i/communities/2023125192399331815',
+    href: '#',
     icon: (
       <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
@@ -36,24 +36,6 @@ const socialLinks = [
 export default function Footer() {
   return (
     <footer className="relative border-t border-[var(--glass-border)] bg-[var(--alien-darker)]">
-      {/* Contract Address Bar */}
-      <div className="border-b border-[var(--glass-border)] py-3">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-center gap-2 text-sm font-mono">
-            <span className="text-[var(--text-muted)]">CA:</span>
-            <span className="text-[var(--matrix-green)]">43zyyTtrJaV3HLnpDWCFG694g4L3Lo32SZkEy7Rcpump</span>
-            <button
-              onClick={() => navigator.clipboard.writeText('43zyyTtrJaV3HLnpDWCFG694g4L3Lo32SZkEy7Rcpump')}
-              className="p-1 hover:text-[var(--matrix-green)] text-[var(--text-muted)] transition-colors"
-              aria-label="Copy contract address"
-            >
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
 
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -63,13 +45,13 @@ export default function Footer() {
             <Link href="/" className="flex items-center gap-3 mb-4">
               <Image
                 src="/images/et-logo.jpg"
-                alt="ET Scan Logo"
+                alt="AlienScan Logo"
                 width={40}
                 height={40}
                 className="object-contain"
               />
               <span className="font-mono font-bold text-[var(--matrix-green)] text-xl tracking-wider">
-                ET SCAN
+                AlienScan
               </span>
             </Link>
             <p className="text-[var(--text-secondary)] text-sm leading-relaxed mb-6">
@@ -170,7 +152,7 @@ export default function Footer() {
           </div>
           <div className="text-center mt-6">
             <p className="text-[var(--text-muted)] text-xs">
-              Powered by <span className="text-[var(--matrix-green)]">ET SCAN</span> • Disclosure Initiative 2024
+              Powered by <span className="text-[var(--matrix-green)]">AlienScan</span> • Disclosure Initiative 2024
             </p>
           </div>
         </div>

@@ -1,5 +1,5 @@
 // ============================================
-// ET SCAN - Utility Functions
+// AlienScan - Utility Functions
 // ============================================
 
 import { ThreatLevel, AlienType, CredibilityScore } from './types';

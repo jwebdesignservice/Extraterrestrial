@@ -1,6 +1,6 @@
 'use client';
 
-// ET Scan - Global Sighting Tracker
+// AlienScan - Global Sighting Tracker
 import { useState, useMemo } from 'react';
 import dynamic from 'next/dynamic';
 import { motion } from 'framer-motion';
@@ -272,7 +272,7 @@ export default function HomePage() {
             />
             <p className="text-[var(--text-secondary)] md:text-lg mb-8 max-w-2xl mx-auto">
               Report sightings, analyze data, and help expose the truth about extraterrestrial 
-              intelligence. Every scan burns $ETS tokens, reducing supply forever.
+              intelligence. Every scan burns $ALIEN tokens, reducing supply forever.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3 md:gap-4">
               <Link
@@ -291,7 +291,7 @@ export default function HomePage() {
                 href="/token"
                 className="px-5 md:px-6 py-3 border border-[var(--cyber-cyan)] text-[var(--cyber-cyan)] font-mono font-bold text-sm uppercase tracking-wider rounded hover:bg-[var(--cyber-cyan)]/10 transition-all"
               >
-                Buy $ETS
+                Buy $ALIEN
               </Link>
             </div>
           </GlassPanel>

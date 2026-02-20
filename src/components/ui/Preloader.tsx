@@ -134,7 +134,7 @@ export default function Preloader() {
               transition={{ delay: 0.3 }}
             >
               <h1 className="font-mono text-3xl font-bold text-[var(--matrix-green)] tracking-[0.3em] mb-2">
-                ET SCAN
+                AlienScan
               </h1>
               <p className="font-mono text-xs text-[var(--text-muted)] tracking-widest uppercase">
                 Global Extraterrestrial Intelligence Network
