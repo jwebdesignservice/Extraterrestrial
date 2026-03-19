@@ -291,7 +291,7 @@ export default function HomePage() {
                 href="/token"
                 className="px-5 md:px-6 py-3 border border-[var(--cyber-cyan)] text-[var(--cyber-cyan)] font-mono font-bold text-sm uppercase tracking-wider rounded hover:bg-[var(--cyber-cyan)]/10 transition-all"
               >
-                Buy $ALIENS
+                Buy $ALIENSCAN
               </Link>
             </div>
           </GlassPanel>

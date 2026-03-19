@@ -8,11 +8,11 @@ import SoundToggle from '@/components/features/SoundToggle';
 import ClientWrapper from '@/components/layout/ClientWrapper';
 
 export const metadata: Metadata = {
-  title: 'AliensAreReal ($ALIENS) | Global Extraterrestrial Intelligence Network',
+  title: 'AliensAreReal ($ALIENSCAN) | Global Extraterrestrial Intelligence Network',
   description: 'Track global alien sightings, analyze patterns, and join the disclosure movement. The most comprehensive database of extraterrestrial encounters.',
-  keywords: 'aliensarereal, $aliens, alien, ufo, uap, sightings, extraterrestrial, disclosure',
+  keywords: 'aliensarereal, $alienscan, alien, ufo, uap, sightings, extraterrestrial, disclosure',
   openGraph: {
-    title: 'AliensAreReal ($ALIENS) | Global Extraterrestrial Intelligence Network',
+    title: 'AliensAreReal ($ALIENSCAN) | Global Extraterrestrial Intelligence Network',
     description: 'Track global alien sightings, analyze patterns, and join the disclosure movement.',
     type: 'website',
   },
