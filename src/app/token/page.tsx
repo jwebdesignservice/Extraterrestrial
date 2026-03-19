@@ -31,7 +31,7 @@ export default function TokenPage() {
         >
           <div className="flex flex-wrap items-center gap-8 mb-6">
             <GlitchText
-              text="$ALIEN"
+              text="$ALIENSCAN"
               className="font-mono text-5xl md:text-6xl text-[var(--matrix-green)]"
               as="h1"
             />
