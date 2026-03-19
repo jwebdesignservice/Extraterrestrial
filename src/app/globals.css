@@ -3,38 +3,38 @@
 @import "tailwindcss";
 
 /* ============================================
-   AliensAreReal - Matrix Theme Design System
+   AliensAreReal - Orange Theme Design System
    ============================================ */
 
 :root {
   /* Core Colors */
-  --alien-black: #ffffff;
-  --alien-dark: #ffffff;
-  --alien-darker: #ffffff;
+  --alien-black: #000000;
+  --alien-dark: #0a0a0a;
+  --alien-darker: #050505;
   
-  /* Matrix Green */
-  --matrix-green: #00FF41;
-  --matrix-green-dim: #00cc33;
-  --matrix-green-dark: #00991f;
-  --matrix-green-glow: rgba(0, 255, 65, 0.4);
+  /* Primary Orange (replaces matrix green) */
+  --matrix-green: #FF6B00;
+  --matrix-green-dim: #cc5500;
+  --matrix-green-dark: #993d00;
+  --matrix-green-glow: rgba(255, 107, 0, 0.4);
   
   /* Cyber Cyan */
-  --cyber-cyan: #00FFFF;
-  --cyber-cyan-dim: #00cccc;
-  --cyber-cyan-glow: rgba(0, 255, 255, 0.4);
+  --cyber-cyan: #FF9A3C;
+  --cyber-cyan-dim: #e07a1a;
+  --cyber-cyan-glow: rgba(255, 154, 60, 0.4);
   
   /* Warning Colors */
   --warning-red: #FF0040;
   --warning-red-dim: #cc0033;
   --warning-red-glow: rgba(255, 0, 64, 0.4);
-  --warning-orange: #FF6B00;
+  --warning-orange: #FF8C00;
   --warning-yellow: #FFD700;
   
   /* Glassmorphism */
-  --panel-bg: rgba(255, 255, 255, 0.85);
-  --panel-bg-hover: rgba(255, 255, 255, 0.9);
-  --glass-border: rgba(0, 255, 65, 0.15);
-  --glass-border-hover: rgba(0, 255, 65, 0.3);
+  --panel-bg: rgba(10, 10, 10, 0.85);
+  --panel-bg-hover: rgba(20, 20, 20, 0.9);
+  --glass-border: rgba(255, 107, 0, 0.15);
+  --glass-border-hover: rgba(255, 107, 0, 0.3);
   
   /* Text Colors */
   --text-primary: #e0e0e0;
@@ -61,7 +61,7 @@ html {
 
 body {
   font-family: var(--font-body);
-  background: white;
+  background: var(--alien-black);
   color: var(--text-primary);
   min-height: 100vh;
   overflow-x: hidden;

@@ -29,7 +29,7 @@ export default function Navbar() {
             <Link href="/" className="flex items-center gap-2 group">
               <div className="relative w-8 h-8 flex items-center justify-center">
                 <Image
-                  src="/images/et-logo.jpg"
+                  src="/images/logo.svg"
                   alt="AliensAreReal Logo"
                   width={32}
                   height={32}
