@@ -30,7 +30,7 @@ export default function Navbar() {
               <div className="relative w-8 h-8 flex items-center justify-center">
                 <Image
                   src="/images/et-logo.jpg"
-                  alt="AlienScan Logo"
+                  alt="AliensAreReal Logo"
                   width={32}
                   height={32}
                   className="w-8 h-8 object-contain group-hover:scale-110 transition-transform"
@@ -38,7 +38,7 @@ export default function Navbar() {
               </div>
               <div className="flex flex-col">
                 <span className="font-mono font-bold text-[var(--matrix-green)] text-lg tracking-wider">
-                  AlienScan
+                  AliensAreReal
                 </span>
                 <span className="text-[10px] text-[var(--text-muted)] tracking-widest uppercase">
                   Global ET Intelligence
@@ -108,7 +108,7 @@ export default function Navbar() {
                 href="/token"
                 className="px-4 py-2 bg-[var(--matrix-green)] text-[var(--alien-black)] font-mono font-bold text-sm uppercase tracking-wider rounded hover:shadow-[0_0_20px_var(--matrix-green-glow)] transition-all duration-300"
               >
-                Buy $ALIEN
+                Buy $ALIENS
               </Link>
             </div>
 
@@ -213,7 +213,7 @@ export default function Navbar() {
                   onClick={() => setIsOpen(false)}
                   className="block w-full px-4 py-3 mt-4 bg-[var(--matrix-green)] text-[var(--alien-black)] font-mono font-bold text-sm uppercase tracking-wider rounded text-center"
                 >
-                  Buy $ALIEN Token
+                  Buy $ALIENS Token
                 </Link>
               </motion.div>
             </div>

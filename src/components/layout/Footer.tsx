@@ -45,13 +45,13 @@ export default function Footer() {
             <Link href="/" className="flex items-center gap-3 mb-4">
               <Image
                 src="/images/et-logo.jpg"
-                alt="AlienScan Logo"
+                alt="AliensAreReal Logo"
                 width={40}
                 height={40}
                 className="object-contain"
               />
               <span className="font-mono font-bold text-[var(--matrix-green)] text-xl tracking-wider">
-                AlienScan
+                AliensAreReal
               </span>
             </Link>
             <p className="text-[var(--text-secondary)] text-sm leading-relaxed mb-6">
@@ -152,7 +152,7 @@ export default function Footer() {
           </div>
           <div className="text-center mt-6">
             <p className="text-[var(--text-muted)] text-xs">
-              Powered by <span className="text-[var(--matrix-green)]">AlienScan</span> • Disclosure Initiative 2024
+              Powered by <span className="text-[var(--matrix-green)]">AliensAreReal</span> • Disclosure Initiative 2024
             </p>
           </div>
         </div>

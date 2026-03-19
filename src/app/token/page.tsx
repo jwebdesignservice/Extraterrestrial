@@ -129,7 +129,7 @@ export default function TokenPage() {
                 value={burnedAmount}
                 className="text-5xl md:text-6xl font-bold text-[var(--warning-red)] font-mono"
               />
-              <p className="text-[var(--text-muted)] mt-2">$ALIEN burned forever</p>
+              <p className="text-[var(--text-muted)] mt-2">$ALIENS burned forever</p>
             </div>
 
             <div className="space-y-2 font-mono text-sm">
