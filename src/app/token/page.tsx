@@ -157,7 +157,7 @@ export default function TokenPage() {
           <div className="grid md:grid-cols-3 gap-6">
             {[
               { step: 1, title: 'User Scans', desc: 'Every time someone explores a country, clan, or historical figure.' },
-              { step: 2, title: 'Tokens Burn', desc: 'A small amount of $ALIEN is automatically burned forever.' },
+              { step: 2, title: 'Tokens Burn', desc: 'A small amount of $ALIENSCAN is automatically burned forever.' },
               { step: 3, title: 'Supply Decreases', desc: 'Total supply shrinks, increasing scarcity for holders.' },
             ].map((item) => (
               <motion.div
