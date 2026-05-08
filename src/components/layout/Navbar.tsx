@@ -29,7 +29,7 @@ export default function Navbar() {
             <Link href="/" className="flex items-center gap-2 group">
               <div className="relative w-9 h-9 flex items-center justify-center rounded-xl overflow-hidden shadow-[0_0_15px_rgba(246,210,100,0.35)] ring-1 ring-[rgba(246,210,100,0.4)]">
                 <Image
-                  src="/images/logo.svg"
+                  src="/images/logo-alien.jpg"
                   alt="UAPscan Logo"
                   width={36}
                   height={36}
