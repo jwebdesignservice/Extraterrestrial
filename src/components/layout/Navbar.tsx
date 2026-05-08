@@ -102,7 +102,7 @@ export default function Navbar() {
 
               {/* Twitter/X Link */}
               <a
-                href="https://x.com/i/communities/2024894513114992786"
+                href="https://x.com/i/communities/2007066295993540637"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 text-[var(--text-secondary)] hover:text-[var(--matrix-green)] transition-colors"
