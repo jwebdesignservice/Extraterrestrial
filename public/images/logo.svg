@@ -1,61 +1,71 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
   <defs>
-    <radialGradient id="glowOrange" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#FF6B00" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#FF6B00" stop-opacity="0"/>
+    <radialGradient id="sky" cx="50%" cy="55%" r="65%">
+      <stop offset="0%" stop-color="#7ec8ff"/>
+      <stop offset="65%" stop-color="#3a8fd6"/>
+      <stop offset="100%" stop-color="#1a5a9c"/>
     </radialGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="2.5" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
+    <radialGradient id="burst" cx="42%" cy="50%" r="40%">
+      <stop offset="0%"  stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="35%" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="70%" stop-color="#bcdcff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#bcdcff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldBody" x1="0%" y1="40%" x2="0%" y2="100%">
+      <stop offset="0%"  stop-color="#fff3a8"/>
+      <stop offset="20%" stop-color="#f6d264"/>
+      <stop offset="55%" stop-color="#c98e1f"/>
+      <stop offset="100%" stop-color="#5e3d05"/>
+    </linearGradient>
+    <radialGradient id="dome" cx="40%" cy="35%" r="70%">
+      <stop offset="0%"  stop-color="#fff8c8"/>
+      <stop offset="50%" stop-color="#ecc24a"/>
+      <stop offset="100%" stop-color="#8a5a10"/>
+    </radialGradient>
+    <linearGradient id="trees" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"  stop-color="#0a3015"/>
+      <stop offset="100%" stop-color="#021608"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.4"/>
     </filter>
+    <filter id="rays" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.2"/>
+    </filter>
+    <clipPath id="rounded">
+      <rect x="0" y="0" width="240" height="240" rx="40" ry="40"/>
+    </clipPath>
   </defs>
 
-  <!-- Outer glow disc -->
-  <circle cx="60" cy="60" r="54" fill="url(#glowOrange)"/>
+  <g clip-path="url(#rounded)">
+    <rect width="240" height="240" fill="url(#sky)"/>
+    <ellipse cx="60"  cy="80"  rx="55" ry="6"  fill="#ffffff" opacity="0.18"/>
+    <ellipse cx="180" cy="60"  rx="40" ry="5"  fill="#ffffff" opacity="0.12"/>
 
-  <!-- Orbit ring -->
-  <ellipse cx="60" cy="60" rx="52" ry="14" stroke="#FF6B00" stroke-width="1" fill="none" stroke-opacity="0.4"/>
+    <g filter="url(#rays)" opacity="0.8">
+      <path d="M105 120 L20  60   L26 120 Z" fill="#ffffff" opacity="0.55"/>
+      <path d="M105 120 L25 105   L20 145 Z" fill="#ffffff" opacity="0.45"/>
+      <path d="M105 120 L30 175   L60 165 Z" fill="#ffffff" opacity="0.4"/>
+      <path d="M105 120 L70  35   L95  60 Z" fill="#ffffff" opacity="0.5"/>
+      <path d="M105 120 L120 30   L140 55 Z" fill="#ffffff" opacity="0.35"/>
+    </g>
 
-  <!-- UFO saucer body -->
-  <ellipse cx="60" cy="62" rx="30" ry="10" fill="#1a0a00" stroke="#FF6B00" stroke-width="1.5" filter="url(#glow)"/>
+    <circle cx="100" cy="120" r="78" fill="url(#burst)"/>
 
-  <!-- UFO dome -->
-  <path d="M42 62 Q42 44 60 42 Q78 44 78 62" fill="#0f0600" stroke="#FF6B00" stroke-width="1.5" filter="url(#glow)"/>
+    <path d="M0 215
+             L12 200 L22 210 L34 192 L48 208 L62 196 L78 210 L92 198
+             L108 212 L124 200 L140 210 L156 196 L172 208 L188 198
+             L204 212 L220 200 L240 210 L240 240 L0 240 Z"
+          fill="url(#trees)"/>
 
-  <!-- Dome highlight -->
-  <path d="M48 58 Q50 48 60 46 Q70 48 72 58" fill="none" stroke="#FF9A3C" stroke-width="0.8" stroke-opacity="0.5"/>
-
-  <!-- UFO underside panels -->
-  <line x1="44" y1="65" x2="44" y2="68" stroke="#FF6B00" stroke-width="1" stroke-opacity="0.6"/>
-  <line x1="52" y1="67" x2="52" y2="70" stroke="#FF6B00" stroke-width="1" stroke-opacity="0.6"/>
-  <line x1="60" y1="68" x2="60" y2="71" stroke="#FF6B00" stroke-width="1" stroke-opacity="0.6"/>
-  <line x1="68" y1="67" x2="68" y2="70" stroke="#FF6B00" stroke-width="1" stroke-opacity="0.6"/>
-  <line x1="76" y1="65" x2="76" y2="68" stroke="#FF6B00" stroke-width="1" stroke-opacity="0.6"/>
-
-  <!-- Tractor beam -->
-  <path d="M50 71 L40 90 M60 72 L60 92 M70 71 L80 90" stroke="#FF6B00" stroke-width="0.6" stroke-opacity="0.25"/>
-  <path d="M50 71 L45 85 L75 85 L70 71" fill="#FF6B00" fill-opacity="0.05"/>
-
-  <!-- Alien eye (left) -->
-  <ellipse cx="51" cy="54" rx="4.5" ry="6" fill="#000" stroke="#FF6B00" stroke-width="1" filter="url(#glow)"/>
-  <ellipse cx="51" cy="54" rx="2" ry="3" fill="#FF6B00" fill-opacity="0.9"/>
-
-  <!-- Alien eye (right) -->
-  <ellipse cx="69" cy="54" rx="4.5" ry="6" fill="#000" stroke="#FF6B00" stroke-width="1" filter="url(#glow)"/>
-  <ellipse cx="69" cy="54" rx="2" ry="3" fill="#FF6B00" fill-opacity="0.9"/>
-
-  <!-- Scanning dots orbiting -->
-  <circle cx="60" cy="8" r="2" fill="#FF6B00" filter="url(#glow)"/>
-  <circle cx="112" cy="60" r="2" fill="#FF9A3C" filter="url(#glow)"/>
-  <circle cx="60" cy="112" r="2" fill="#FF6B00" filter="url(#glow)"/>
-  <circle cx="8" cy="60" r="2" fill="#FF9A3C" filter="url(#glow)"/>
-
-  <!-- Corner radar ticks -->
-  <line x1="14" y1="14" x2="22" y2="22" stroke="#FF6B00" stroke-width="1" stroke-opacity="0.5"/>
-  <line x1="106" y1="14" x2="98" y2="22" stroke="#FF6B00" stroke-width="1" stroke-opacity="0.5"/>
-  <line x1="14" y1="106" x2="22" y2="98" stroke="#FF6B00" stroke-width="1" stroke-opacity="0.5"/>
-  <line x1="106" y1="106" x2="98" y2="98" stroke="#FF6B00" stroke-width="1" stroke-opacity="0.5"/>
+    <ellipse cx="135" cy="130" rx="92" ry="14" fill="#000000" opacity="0.18" filter="url(#soft)"/>
+    <ellipse cx="135" cy="128" rx="92" ry="18" fill="url(#goldBody)"/>
+    <path d="M48 128 Q135 102 227 128"
+          fill="none" stroke="#fff3a8" stroke-width="2" opacity="0.85"/>
+    <path d="M55 134 Q135 152 220 134"
+          fill="none" stroke="#3d2603" stroke-width="2" opacity="0.7"/>
+    <ellipse cx="138" cy="120" rx="46" ry="9" fill="url(#dome)"/>
+    <ellipse cx="120" cy="117" rx="14" ry="2.2" fill="#ffffff" opacity="0.85"/>
+    <ellipse cx="115" cy="125" rx="22" ry="2.4" fill="#ffffff" opacity="0.55"/>
+  </g>
 </svg>

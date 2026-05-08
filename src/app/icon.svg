@@ -1,47 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
   <defs>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="2.5" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
+    <radialGradient id="iSky" cx="50%" cy="55%" r="65%">
+      <stop offset="0%" stop-color="#7ec8ff"/>
+      <stop offset="65%" stop-color="#3a8fd6"/>
+      <stop offset="100%" stop-color="#1a5a9c"/>
+    </radialGradient>
+    <radialGradient id="iBurst" cx="42%" cy="50%" r="40%">
+      <stop offset="0%"  stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="35%" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="70%" stop-color="#bcdcff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#bcdcff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="iGold" x1="0%" y1="40%" x2="0%" y2="100%">
+      <stop offset="0%"  stop-color="#fff3a8"/>
+      <stop offset="20%" stop-color="#f6d264"/>
+      <stop offset="55%" stop-color="#c98e1f"/>
+      <stop offset="100%" stop-color="#5e3d05"/>
+    </linearGradient>
+    <radialGradient id="iDome" cx="40%" cy="35%" r="70%">
+      <stop offset="0%"  stop-color="#fff8c8"/>
+      <stop offset="50%" stop-color="#ecc24a"/>
+      <stop offset="100%" stop-color="#8a5a10"/>
+    </radialGradient>
+    <clipPath id="iRound">
+      <rect x="0" y="0" width="240" height="240" rx="48" ry="48"/>
+    </clipPath>
   </defs>
-
-  <!-- Orbit ring -->
-  <ellipse cx="60" cy="60" rx="52" ry="14" stroke="#FF6B00" stroke-width="1.2" fill="none" stroke-opacity="0.5"/>
-
-  <!-- UFO saucer body -->
-  <ellipse cx="60" cy="62" rx="30" ry="10" fill="#1a0a00" stroke="#FF6B00" stroke-width="1.8" filter="url(#glow)"/>
-
-  <!-- UFO dome -->
-  <path d="M42 62 Q42 44 60 42 Q78 44 78 62" fill="#0f0600" stroke="#FF6B00" stroke-width="1.8" filter="url(#glow)"/>
-
-  <!-- Dome highlight -->
-  <path d="M48 58 Q50 48 60 46 Q70 48 72 58" fill="none" stroke="#FF9A3C" stroke-width="0.8" stroke-opacity="0.6"/>
-
-  <!-- UFO underside beam lines -->
-  <line x1="44" y1="65" x2="44" y2="68" stroke="#FF6B00" stroke-width="1.2" stroke-opacity="0.7"/>
-  <line x1="52" y1="67" x2="52" y2="71" stroke="#FF6B00" stroke-width="1.2" stroke-opacity="0.7"/>
-  <line x1="60" y1="68" x2="60" y2="72" stroke="#FF6B00" stroke-width="1.2" stroke-opacity="0.7"/>
-  <line x1="68" y1="67" x2="68" y2="71" stroke="#FF6B00" stroke-width="1.2" stroke-opacity="0.7"/>
-  <line x1="76" y1="65" x2="76" y2="68" stroke="#FF6B00" stroke-width="1.2" stroke-opacity="0.7"/>
-
-  <!-- Tractor beam glow -->
-  <path d="M50 72 L42 90 L78 90 L70 72" fill="#FF6B00" fill-opacity="0.06"/>
-
-  <!-- Alien eye left -->
-  <ellipse cx="51" cy="54" rx="4.5" ry="6" fill="#000" stroke="#FF6B00" stroke-width="1.2" filter="url(#glow)"/>
-  <ellipse cx="51" cy="54" rx="2" ry="3" fill="#FF6B00" fill-opacity="0.95"/>
-
-  <!-- Alien eye right -->
-  <ellipse cx="69" cy="54" rx="4.5" ry="6" fill="#000" stroke="#FF6B00" stroke-width="1.2" filter="url(#glow)"/>
-  <ellipse cx="69" cy="54" rx="2" ry="3" fill="#FF6B00" fill-opacity="0.95"/>
-
-  <!-- Orbiting dots -->
-  <circle cx="60" cy="8" r="2.5" fill="#FF6B00" filter="url(#glow)"/>
-  <circle cx="112" cy="60" r="2.5" fill="#FF9A3C" filter="url(#glow)"/>
-  <circle cx="60" cy="112" r="2.5" fill="#FF6B00" filter="url(#glow)"/>
-  <circle cx="8" cy="60" r="2.5" fill="#FF9A3C" filter="url(#glow)"/>
+  <g clip-path="url(#iRound)">
+    <rect width="240" height="240" fill="url(#iSky)"/>
+    <circle cx="100" cy="120" r="90" fill="url(#iBurst)"/>
+    <ellipse cx="135" cy="128" rx="92" ry="20" fill="url(#iGold)"/>
+    <path d="M48 128 Q135 100 227 128" fill="none" stroke="#fff3a8" stroke-width="3" opacity="0.9"/>
+    <ellipse cx="138" cy="118" rx="48" ry="11" fill="url(#iDome)"/>
+    <ellipse cx="120" cy="115" rx="14" ry="2.5" fill="#ffffff" opacity="0.85"/>
+  </g>
 </svg>

@@ -73,9 +73,9 @@ export default function Footer() {
               <Image
                 src="/images/logo.svg"
                 alt="UAPscan Logo"
-                width={40}
-                height={40}
-                className="object-contain"
+                width={44}
+                height={44}
+                className="rounded-2xl object-cover ring-1 ring-[rgba(246,210,100,0.4)] shadow-[0_0_20px_rgba(246,210,100,0.3)]"
               />
               <span className="font-mono font-bold text-[var(--matrix-green)] text-xl tracking-wider">
                 UAPscan
