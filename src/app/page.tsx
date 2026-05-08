@@ -431,12 +431,14 @@ export default function HomePage() {
               >
                 Report Sighting
               </Link>
-              <Link
-                href="/token"
+              <a
+                href="https://gmgn.ai/sol/token/GzF5pdZADfHcFN3ropyVhPex19dBzeWE9TQug13Tpump"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-5 md:px-6 py-3 border border-[var(--cyber-cyan)] text-[var(--cyber-cyan)] font-mono font-bold text-sm uppercase tracking-wider rounded hover:bg-[var(--cyber-cyan)]/10 transition-all"
               >
                 Buy $UAPSCAN
-              </Link>
+              </a>
             </div>
           </GlassPanel>
         </div>

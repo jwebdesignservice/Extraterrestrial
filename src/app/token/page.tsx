@@ -47,21 +47,26 @@ export default function TokenPage() {
             </div>
           </div>
 
-          {/* Contract Address — TBA */}
-          <div className="mb-6 inline-flex items-center gap-3 px-4 py-3 border border-[var(--warning-yellow)]/50 bg-[var(--warning-yellow)]/5 rounded">
-            <span className="font-mono text-xs uppercase tracking-widest text-[var(--text-muted)]">
+          {/* Contract Address */}
+          <div className="mb-6 flex flex-col md:flex-row md:items-center gap-3 px-4 py-3 border border-[var(--matrix-green)]/40 bg-[var(--matrix-green)]/5 rounded">
+            <span className="font-mono text-xs uppercase tracking-widest text-[var(--text-muted)] whitespace-nowrap">
               Contract Address
             </span>
-            <span className="font-mono text-base md:text-lg font-bold text-[var(--warning-yellow)] tracking-wider">
-              TBA
-            </span>
-            <span className="font-mono text-[10px] text-[var(--text-muted)]">
-              · Will be announced on launch
+            <span className="font-mono text-xs md:text-sm font-bold text-[var(--matrix-green)] break-all select-all">
+              {tokenData.contractAddress}
             </span>
           </div>
 
           {/* Action Buttons */}
           <div className="flex flex-wrap gap-3 mb-8">
+            <a
+              href={`https://gmgn.ai/sol/token/${tokenData.contractAddress}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 bg-[var(--matrix-green)] text-[var(--alien-black)] font-mono font-bold uppercase tracking-wider rounded hover:shadow-[0_0_25px_var(--matrix-green-glow)] transition-all"
+            >
+              Buy $UAPSCAN on GMGN ↗
+            </a>
             <Link
               href="/"
               className="px-6 py-3 border border-[var(--glass-border)] text-[var(--text-secondary)] font-mono uppercase tracking-wider rounded hover:border-[var(--matrix-green)] transition-all"

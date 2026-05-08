@@ -113,13 +113,15 @@ export default function Navbar() {
                 </svg>
               </a>
 
-              {/* Buy Token Button */}
-              <Link
-                href="/token"
+              {/* Buy Token Button (GMGN) */}
+              <a
+                href="https://gmgn.ai/sol/token/GzF5pdZADfHcFN3ropyVhPex19dBzeWE9TQug13Tpump"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-4 py-2 bg-[var(--matrix-green)] text-[var(--alien-black)] font-mono font-bold text-sm uppercase tracking-wider rounded hover:shadow-[0_0_20px_var(--matrix-green-glow)] transition-all duration-300"
               >
                 Buy $UAPSCAN
-              </Link>
+              </a>
             </div>
 
             {/* Mobile Menu Button */}
@@ -235,13 +237,15 @@ export default function Navbar() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: (navLinks.length + 1) * 0.05 }}
               >
-                <Link
-                  href="/token"
+                <a
+                  href="https://gmgn.ai/sol/token/GzF5pdZADfHcFN3ropyVhPex19dBzeWE9TQug13Tpump"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   onClick={() => setIsOpen(false)}
                   className="block w-full px-4 py-3 mt-2 bg-[var(--matrix-green)] text-[var(--alien-black)] font-mono font-bold text-sm uppercase tracking-wider rounded text-center"
                 >
-                  Buy $UAPSCAN Token
-                </Link>
+                  Buy $UAPSCAN on GMGN
+                </a>
               </motion.div>
             </div>
           </motion.div>
