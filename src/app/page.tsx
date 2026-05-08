@@ -1,6 +1,6 @@
 'use client';
 
-// AliensAreReal - Global Sighting Tracker
+// AliensAreConfirmed - Global Sighting Tracker
 import { useState, useMemo } from 'react';
 import dynamic from 'next/dynamic';
 import { motion } from 'framer-motion';
@@ -43,6 +43,40 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen">
+      {/* Government's Alien Files — Declassified PDF Hero CTA */}
+      <section className="px-4 pt-6">
+        <div className="max-w-7xl mx-auto">
+          <a
+            href="https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_10.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block group"
+          >
+            <GlassPanel className="p-4 md:p-5 border-[var(--warning-red)]/60 hover:border-[var(--warning-red)] transition-all hover:shadow-[0_0_30px_rgba(255,0,0,0.25)]">
+              <div className="flex flex-col md:flex-row items-center justify-between gap-3">
+                <div className="flex items-center gap-4">
+                  <span className="text-3xl md:text-4xl animate-pulse">⚠</span>
+                  <div>
+                    <p className="font-mono text-[10px] md:text-xs text-[var(--warning-red)] uppercase tracking-[0.3em] mb-1">
+                      Declassified — Disclosure Initiative
+                    </p>
+                    <h2 className="font-mono text-base md:text-xl lg:text-2xl text-[var(--warning-red)] font-bold tracking-wider">
+                      GOVERNMENT&apos;S ALIEN FILES
+                    </h2>
+                    <p className="text-[var(--text-secondary)] text-xs md:text-sm mt-1">
+                      Official war.gov UFO release — HQ-83894, Section 10
+                    </p>
+                  </div>
+                </div>
+                <span className="px-5 py-3 border-2 border-[var(--warning-red)] text-[var(--warning-red)] font-mono font-bold text-xs md:text-sm uppercase tracking-wider rounded group-hover:bg-[var(--warning-red)] group-hover:text-[var(--alien-black)] transition-all whitespace-nowrap">
+                  Read the File ↗
+                </span>
+              </div>
+            </GlassPanel>
+          </a>
+        </div>
+      </section>
+
       {/* Hero Section with Stats */}
       <section className="px-4 py-6">
         <div className="max-w-7xl mx-auto">
@@ -272,7 +306,7 @@ export default function HomePage() {
             />
             <p className="text-[var(--text-secondary)] md:text-lg mb-8 max-w-2xl mx-auto">
               Report sightings, analyze data, and help expose the truth about extraterrestrial 
-              intelligence. Every scan burns $ALIEN tokens, reducing supply forever.
+              intelligence. Every scan burns $UAP tokens, reducing supply forever.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3 md:gap-4">
               <Link
@@ -291,7 +325,7 @@ export default function HomePage() {
                 href="/token"
                 className="px-5 md:px-6 py-3 border border-[var(--cyber-cyan)] text-[var(--cyber-cyan)] font-mono font-bold text-sm uppercase tracking-wider rounded hover:bg-[var(--cyber-cyan)]/10 transition-all"
               >
-                Buy $ALIENSCAN
+                Buy $UAP
               </Link>
             </div>
           </GlassPanel>

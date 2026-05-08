@@ -30,7 +30,7 @@ export default function Navbar() {
               <div className="relative w-8 h-8 flex items-center justify-center">
                 <Image
                   src="/images/logo.svg"
-                  alt="AliensAreReal Logo"
+                  alt="AliensAreConfirmed Logo"
                   width={32}
                   height={32}
                   className="w-8 h-8 object-contain group-hover:scale-110 transition-transform"
@@ -38,7 +38,7 @@ export default function Navbar() {
               </div>
               <div className="flex flex-col">
                 <span className="font-mono font-bold text-[var(--matrix-green)] text-lg tracking-wider">
-                  AliensAreReal
+                  AliensAreConfirmed
                 </span>
                 <span className="text-[10px] text-[var(--text-muted)] tracking-widest uppercase">
                   Global ET Intelligence
@@ -90,6 +90,16 @@ export default function Navbar() {
                 </svg>
               </div>
 
+              {/* Government's Alien Files (Declassified PDF) */}
+              <a
+                href="https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_10.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-3 py-2 border border-[var(--warning-red)] text-[var(--warning-red)] font-mono font-bold text-xs uppercase tracking-wider rounded hover:bg-[var(--warning-red)]/10 hover:shadow-[0_0_15px_rgba(255,0,0,0.4)] transition-all duration-300"
+              >
+                ⚠ Gov&apos;s Alien Files
+              </a>
+
               {/* Twitter/X Link */}
               <a
                 href="https://x.com/i/communities/2024894513114992786"
@@ -108,7 +118,7 @@ export default function Navbar() {
                 href="/token"
                 className="px-4 py-2 bg-[var(--matrix-green)] text-[var(--alien-black)] font-mono font-bold text-sm uppercase tracking-wider rounded hover:shadow-[0_0_20px_var(--matrix-green-glow)] transition-all duration-300"
               >
-                Buy $ALIENSCAN
+                Buy $UAP
               </Link>
             </div>
 
@@ -202,18 +212,35 @@ export default function Navbar() {
                 </motion.div>
               ))}
 
-              {/* Mobile Buy Button */}
+              {/* Mobile Government's Alien Files Link */}
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: navLinks.length * 0.05 }}
               >
+                <a
+                  href="https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_10.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setIsOpen(false)}
+                  className="block w-full px-4 py-3 mt-4 border border-[var(--warning-red)] text-[var(--warning-red)] font-mono font-bold text-sm uppercase tracking-wider rounded text-center"
+                >
+                  ⚠ Gov&apos;s Alien Files (PDF)
+                </a>
+              </motion.div>
+
+              {/* Mobile Buy Button */}
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: (navLinks.length + 1) * 0.05 }}
+              >
                 <Link
                   href="/token"
                   onClick={() => setIsOpen(false)}
-                  className="block w-full px-4 py-3 mt-4 bg-[var(--matrix-green)] text-[var(--alien-black)] font-mono font-bold text-sm uppercase tracking-wider rounded text-center"
+                  className="block w-full px-4 py-3 mt-2 bg-[var(--matrix-green)] text-[var(--alien-black)] font-mono font-bold text-sm uppercase tracking-wider rounded text-center"
                 >
-                  Buy $ALIENSCAN Token
+                  Buy $UAP Token
                 </Link>
               </motion.div>
             </div>

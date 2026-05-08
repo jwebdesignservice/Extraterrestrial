@@ -1,5 +1,5 @@
 // ============================================
-// AliensAreReal - TypeScript Type Definitions
+// AliensAreConfirmed - TypeScript Type Definitions
 // ============================================
 
 // Coordinates type
