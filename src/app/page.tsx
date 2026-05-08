@@ -115,6 +115,116 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Intercept Banner — UFO field photo with alien-tech HUD overlay */}
+      <section className="px-4 mb-12">
+        <div className="max-w-7xl mx-auto">
+          <div
+            className="relative overflow-hidden rounded-lg border border-[var(--matrix-green)]/30 shadow-[0_0_40px_rgba(0,255,65,0.08)]"
+            style={{
+              backgroundImage: "url('/images/ufo-field.jpg')",
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+          >
+            {/* Darken + tint to blend with site palette */}
+            <div className="absolute inset-0 bg-black/65" />
+            <div className="absolute inset-0 bg-gradient-to-b from-[var(--alien-darker)]/60 via-transparent to-[var(--alien-darker)]" />
+            <div
+              className="absolute inset-0 mix-blend-overlay opacity-60"
+              style={{
+                background:
+                  'radial-gradient(ellipse at center, rgba(255,107,0,0.25) 0%, rgba(0,0,0,0) 60%)',
+              }}
+            />
+
+            {/* Scan-line overlay */}
+            <div
+              className="absolute inset-0 pointer-events-none opacity-25 mix-blend-screen"
+              style={{
+                backgroundImage:
+                  'repeating-linear-gradient(0deg, rgba(0,255,65,0.18) 0px, rgba(0,255,65,0.18) 1px, transparent 1px, transparent 4px)',
+              }}
+            />
+
+            {/* Grid overlay */}
+            <div
+              className="absolute inset-0 pointer-events-none opacity-25"
+              style={{
+                backgroundImage:
+                  'linear-gradient(rgba(255,107,0,0.18) 1px, transparent 1px), linear-gradient(90deg, rgba(255,107,0,0.18) 1px, transparent 1px)',
+                backgroundSize: '40px 40px',
+              }}
+            />
+
+            {/* Corner brackets */}
+            <div className="absolute top-3 left-3 w-8 h-8 border-l-2 border-t-2 border-[var(--matrix-green)]" />
+            <div className="absolute top-3 right-3 w-8 h-8 border-r-2 border-t-2 border-[var(--matrix-green)]" />
+            <div className="absolute bottom-3 left-3 w-8 h-8 border-l-2 border-b-2 border-[var(--matrix-green)]" />
+            <div className="absolute bottom-3 right-3 w-8 h-8 border-r-2 border-b-2 border-[var(--matrix-green)]" />
+
+            {/* Targeting reticle */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+              <div className="relative w-40 h-40 md:w-56 md:h-56">
+                <div className="absolute inset-0 rounded-full border border-[var(--warning-red)]/70 animate-pulse" />
+                <div className="absolute inset-4 rounded-full border border-[var(--warning-red)]/40" />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-full h-px bg-[var(--warning-red)]/60" />
+                </div>
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="h-full w-px bg-[var(--warning-red)]/60" />
+                </div>
+                <div className="absolute -top-6 left-1/2 -translate-x-1/2 font-mono text-[10px] text-[var(--warning-red)] tracking-widest whitespace-nowrap">
+                  TARGET LOCKED
+                </div>
+              </div>
+            </div>
+
+            {/* Top-left HUD readout */}
+            <div className="absolute top-6 left-6 md:top-10 md:left-10 font-mono text-[10px] md:text-xs text-[var(--matrix-green)] space-y-1">
+              <div className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-[var(--matrix-green)] animate-pulse" />
+                <span className="tracking-widest">LIVE FEED // SECTOR 7-G</span>
+              </div>
+              <div className="text-[var(--text-muted)]">LAT 38.4392° N</div>
+              <div className="text-[var(--text-muted)]">LON 122.7141° W</div>
+              <div className="text-[var(--text-muted)]">ALT 412m AGL</div>
+            </div>
+
+            {/* Top-right HUD readout */}
+            <div className="absolute top-6 right-6 md:top-10 md:right-10 font-mono text-[10px] md:text-xs text-right space-y-1">
+              <div className="text-[var(--warning-red)] tracking-widest">⚠ ANOMALY DETECTED</div>
+              <div className="text-[var(--text-muted)]">CLASS: UAP-1</div>
+              <div className="text-[var(--text-muted)]">VEL: 2,847 m/s</div>
+              <div className="text-[var(--text-muted)]">SIG: ▮▮▮▮▮▮▯▯</div>
+            </div>
+
+            {/* Bottom HUD bar */}
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/85 to-transparent pt-12 pb-4 px-6 md:px-10">
+              <div className="flex flex-wrap items-end justify-between gap-3">
+                <div>
+                  <p className="font-mono text-[10px] md:text-xs text-[var(--matrix-green)] tracking-[0.3em] mb-1">
+                    [INTERCEPTED]
+                  </p>
+                  <h3 className="font-mono text-base md:text-2xl text-[var(--text-primary)] font-bold tracking-wider">
+                    CLASS-IV ENCOUNTER · DAYTIME RECOVERY
+                  </h3>
+                  <p className="text-[var(--text-muted)] text-xs md:text-sm mt-1">
+                    Frame 0042 · Burst-flash spectral analysis pending · Witness array: 14
+                  </p>
+                </div>
+                <div className="flex items-center gap-2 font-mono text-[10px] text-[var(--matrix-green)]">
+                  <span className="px-2 py-1 border border-[var(--matrix-green)]/50 rounded">REC</span>
+                  <span className="px-2 py-1 border border-[var(--text-muted)]/50 rounded text-[var(--text-muted)]">04:21:07</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Aspect ratio holder */}
+            <div className="invisible h-[260px] md:h-[360px] lg:h-[420px]" />
+          </div>
+        </div>
+      </section>
+
       {/* Map Section */}
       <section className="px-4 mb-12">
         <div className="max-w-7xl mx-auto">
