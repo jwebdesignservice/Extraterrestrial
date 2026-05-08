@@ -47,6 +47,19 @@ export default function TokenPage() {
             </div>
           </div>
 
+          {/* Contract Address — TBA */}
+          <div className="mb-6 inline-flex items-center gap-3 px-4 py-3 border border-[var(--warning-yellow)]/50 bg-[var(--warning-yellow)]/5 rounded">
+            <span className="font-mono text-xs uppercase tracking-widest text-[var(--text-muted)]">
+              Contract Address
+            </span>
+            <span className="font-mono text-base md:text-lg font-bold text-[var(--warning-yellow)] tracking-wider">
+              TBA
+            </span>
+            <span className="font-mono text-[10px] text-[var(--text-muted)]">
+              · Will be announced on launch
+            </span>
+          </div>
+
           {/* Action Buttons */}
           <div className="flex flex-wrap gap-3 mb-8">
             <Link
