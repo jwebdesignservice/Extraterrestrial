@@ -31,7 +31,7 @@ export default function TokenPage() {
         >
           <div className="flex flex-wrap items-center gap-8 mb-6">
             <GlitchText
-              text="$UAP"
+              text="$UAPSCAN"
               className="font-mono text-5xl md:text-6xl text-[var(--matrix-green)]"
               as="h1"
             />
@@ -129,7 +129,7 @@ export default function TokenPage() {
                 value={burnedAmount}
                 className="text-5xl md:text-6xl font-bold text-[var(--warning-red)] font-mono"
               />
-              <p className="text-[var(--text-muted)] mt-2">$UAP burned forever</p>
+              <p className="text-[var(--text-muted)] mt-2">$UAPSCAN burned forever</p>
             </div>
 
             <div className="space-y-2 font-mono text-sm">
@@ -157,7 +157,7 @@ export default function TokenPage() {
           <div className="grid md:grid-cols-3 gap-6">
             {[
               { step: 1, title: 'User Scans', desc: 'Every time someone explores a country, clan, or historical figure.' },
-              { step: 2, title: 'Tokens Burn', desc: 'A small amount of $UAP is automatically burned forever.' },
+              { step: 2, title: 'Tokens Burn', desc: 'A small amount of $UAPSCAN is automatically burned forever.' },
               { step: 3, title: 'Supply Decreases', desc: 'Total supply shrinks, increasing scarcity for holders.' },
             ].map((item) => (
               <motion.div
@@ -233,7 +233,7 @@ export default function TokenPage() {
           </div>
         </GlassPanel>
 
-        {/* Why $UAP */}
+        {/* Why $UAPSCAN */}
         <div className="grid md:grid-cols-2 gap-6 mb-8">
           {[
             { title: 'Deflationary', value: '100 burned/scan', desc: 'Every scan burns tokens, reducing supply over time. The more the platform is used, the scarcer the token becomes.' },
