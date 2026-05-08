@@ -20,10 +20,10 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-[100]">
+    <nav className="fixed top-0 left-0 right-0 z-[100] px-4 sm:px-6 lg:px-8 pt-3">
       {/* Main navbar */}
-      <div className="glass-panel border-b border-[var(--glass-border)] backdrop-blur-xl relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto glass-panel border border-[var(--glass-border)] backdrop-blur-xl relative rounded-xl">
+        <div className="px-4 sm:px-6">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2 group">
@@ -162,7 +162,7 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-[#0a0a0a] border-b border-[var(--glass-border)]"
+            className="md:hidden max-w-7xl mx-auto mt-2 bg-[#0a0a0a] border border-[var(--glass-border)] rounded-xl overflow-hidden"
           >
             <div className="px-4 py-4 space-y-2">
               {/* Mobile Search */}

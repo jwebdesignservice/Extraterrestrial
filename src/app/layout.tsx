@@ -35,7 +35,7 @@ export default function RootLayout({
           <MarqueeBar />
           
           {/* Main Content */}
-          <main className="flex-1 pt-[104px]">
+          <main className="flex-1 pt-[140px]">
         {children}
           </main>
           

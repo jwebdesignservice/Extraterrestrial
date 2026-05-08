@@ -18,8 +18,8 @@ export default function MarqueeBar() {
   const doubledAlerts = [...alerts, ...alerts];
 
   return (
-    <div className="fixed top-16 left-0 right-0 z-40 bg-[var(--alien-darker)] border-b border-[var(--glass-border)] overflow-hidden">
-      <div className="py-2">
+    <div className="fixed top-[80px] left-0 right-0 z-40 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto bg-[var(--alien-darker)] border border-[var(--glass-border)] rounded-lg overflow-hidden py-2">
         <motion.div
           className="flex whitespace-nowrap"
           animate={{
