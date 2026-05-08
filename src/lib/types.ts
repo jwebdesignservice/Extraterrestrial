@@ -1,5 +1,5 @@
 // ============================================
-// AliensAreConfirmed - TypeScript Type Definitions
+// UAPscan - TypeScript Type Definitions
 // ============================================
 
 // Coordinates type

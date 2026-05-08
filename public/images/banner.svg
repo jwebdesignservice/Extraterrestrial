@@ -87,7 +87,7 @@
     letter-spacing="4"
     fill="#FF6B00"
     filter="url(#textGlow)"
-  >AliensAreConfirmed</text>
+  >UAPscan</text>
 
   <!-- Dotted underline -->
   <line x1="440" y1="204" x2="1160" y2="204" stroke="#FF6B00" stroke-width="1" stroke-opacity="0.25" stroke-dasharray="4 7"/>

@@ -8,11 +8,11 @@ import SoundToggle from '@/components/features/SoundToggle';
 import ClientWrapper from '@/components/layout/ClientWrapper';
 
 export const metadata: Metadata = {
-  title: 'AliensAreConfirmed ($UAPSCAN) | Global Extraterrestrial Intelligence Network',
+  title: 'UAPscan ($UAPSCAN) | Global Extraterrestrial Intelligence Network',
   description: 'Track global alien sightings, analyze patterns, and join the disclosure movement. The most comprehensive database of extraterrestrial encounters.',
-  keywords: 'aliensareconfirmed, $uapscan, alien, ufo, uap, sightings, extraterrestrial, disclosure',
+  keywords: 'uapscan, $uapscan, alien, ufo, uap, sightings, extraterrestrial, disclosure',
   openGraph: {
-    title: 'AliensAreConfirmed ($UAPSCAN) | Global Extraterrestrial Intelligence Network',
+    title: 'UAPscan ($UAPSCAN) | Global Extraterrestrial Intelligence Network',
     description: 'Track global alien sightings, analyze patterns, and join the disclosure movement.',
     type: 'website',
   },

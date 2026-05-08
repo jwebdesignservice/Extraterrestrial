@@ -1,6 +1,6 @@
 'use client';
 
-// AliensAreConfirmed - Global Sighting Tracker
+// UAPscan - Global Sighting Tracker
 import { useState, useMemo } from 'react';
 import dynamic from 'next/dynamic';
 import { motion } from 'framer-motion';

@@ -30,7 +30,7 @@ export default function Navbar() {
               <div className="relative w-8 h-8 flex items-center justify-center">
                 <Image
                   src="/images/logo.svg"
-                  alt="AliensAreConfirmed Logo"
+                  alt="UAPscan Logo"
                   width={32}
                   height={32}
                   className="w-8 h-8 object-contain group-hover:scale-110 transition-transform"
@@ -38,7 +38,7 @@ export default function Navbar() {
               </div>
               <div className="flex flex-col">
                 <span className="font-mono font-bold text-[var(--matrix-green)] text-lg tracking-wider">
-                  AliensAreConfirmed
+                  UAPscan
                 </span>
                 <span className="text-[10px] text-[var(--text-muted)] tracking-widest uppercase">
                   Global ET Intelligence

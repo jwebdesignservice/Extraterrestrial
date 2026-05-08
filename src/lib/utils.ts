@@ -1,5 +1,5 @@
 // ============================================
-// AliensAreConfirmed - Utility Functions
+// UAPscan - Utility Functions
 // ============================================
 
 import { ThreatLevel, AlienType, CredibilityScore } from './types';
