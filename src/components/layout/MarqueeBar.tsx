@@ -3,13 +3,13 @@
 import { motion } from 'framer-motion';
 
 const alerts = [
-  '🛸 AliensAreReal ($ALIENSCAN) — EXPOSE THE TRUTH',
+  '🛸 AliensAreConfirmed ($UAP) — EXPOSE THE TRUTH',
   '👽 NEW SIGHTING REPORTED — ARIZONA, USA',
   '📡 SIGNAL ANOMALY DETECTED — FREQUENCY 1420MHz',
   '🔴 THREAT LEVEL ELEVATED — GLOBAL STATUS',
   '🌌 DISCLOSURE PROBABILITY: 67%',
   '⚠️ CLASSIFIED FILES UPLOADED — CATEGORY 5',
-  '🛸 AliensAreReal ($ALIENSCAN) — JOIN THE MOVEMENT',
+  '🛸 AliensAreConfirmed ($UAP) — JOIN THE MOVEMENT',
   '📊 2,847 SIGHTINGS TRACKED GLOBALLY',
 ];
 

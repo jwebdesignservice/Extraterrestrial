@@ -37,6 +37,33 @@ export default function Footer() {
   return (
     <footer className="relative border-t border-[var(--glass-border)] bg-[var(--alien-darker)]">
 
+      {/* Government's Alien Files - Declassified PDF banner */}
+      <div className="border-b border-[var(--warning-red)]/40 bg-[var(--warning-red)]/5">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+          <a
+            href="https://www.war.gov/medialink/ufo/release_1/65_hs1-834228961_62-hq-83894_section_10.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-col md:flex-row items-center justify-between gap-3 group"
+          >
+            <div className="flex items-center gap-3">
+              <span className="text-2xl">⚠</span>
+              <div>
+                <p className="font-mono text-[var(--warning-red)] text-sm uppercase tracking-wider font-bold">
+                  Government&apos;s Alien Files
+                </p>
+                <p className="text-[var(--text-muted)] text-xs">
+                  Declassified UFO disclosure document — war.gov / Section 10
+                </p>
+              </div>
+            </div>
+            <span className="px-4 py-2 border border-[var(--warning-red)] text-[var(--warning-red)] font-mono text-xs uppercase tracking-wider rounded group-hover:bg-[var(--warning-red)] group-hover:text-[var(--alien-black)] transition-all">
+              View PDF ↗
+            </span>
+          </a>
+        </div>
+      </div>
+
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -45,13 +72,13 @@ export default function Footer() {
             <Link href="/" className="flex items-center gap-3 mb-4">
               <Image
                 src="/images/logo.svg"
-                alt="AliensAreReal Logo"
+                alt="AliensAreConfirmed Logo"
                 width={40}
                 height={40}
                 className="object-contain"
               />
               <span className="font-mono font-bold text-[var(--matrix-green)] text-xl tracking-wider">
-                AliensAreReal
+                AliensAreConfirmed
               </span>
             </Link>
             <p className="text-[var(--text-secondary)] text-sm leading-relaxed mb-6">
@@ -152,7 +179,7 @@ export default function Footer() {
           </div>
           <div className="text-center mt-6">
             <p className="text-[var(--text-muted)] text-xs">
-              Powered by <span className="text-[var(--matrix-green)]">AliensAreReal</span> • Disclosure Initiative 2024
+              Powered by <span className="text-[var(--matrix-green)]">AliensAreConfirmed</span> • Disclosure Initiative 2024
             </p>
           </div>
         </div>
